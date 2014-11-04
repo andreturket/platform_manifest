@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="aosp"
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com" />
+
+  <remote  name="github"
+           fetch="https://github.com" />
+
   <remote  name="aosp"
            fetch=".." />
   <default revision="refs/tags/android-5.0.0_r2"
            remote="aosp"
+           sync-c="true"
+           sync-f="true"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk,tradefed" >
+  <project path="manifest" name="HazyTeam/platform_manifest" remote="github" revision="hazypop" />
+
+  <project path="build" name="HazyTeam/platform_build" remote="github" revision="hazypop" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
@@ -506,5 +518,6 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+  <project path="vendor/hazy" name="HazyTeam/android_vendor_hazy" remote="github" revision="hazypop" />
 
 </manifest>
