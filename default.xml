@@ -36,6 +36,7 @@
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="android_development" remote="omnirom" revision="android-5.0" groups="pdk-cw-fs" />
+  <!--
   <project path="device/asus/deb" name="device/asus/deb" groups="device,flo" />
   <project path="device/asus/flo" name="device/asus/flo" groups="device,flo" />
   <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" clone-depth="1" />
@@ -43,6 +44,7 @@
   <project path="device/asus/fugu-kernel" name="device/asus/fugu-kernel" groups="device,fugu" clone-depth="1" />
   <project path="device/asus/grouper" name="device/asus/grouper" groups="device,grouper" />
   <project path="device/asus/tilapia" name="device/asus/tilapia" groups="device,grouper" />
+  -->
   <project path="device/common" name="device/common" groups="pdk-cw-fs" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
@@ -60,6 +62,7 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu" />
+  <!--
   <project path="device/htc/flounder" name="device/htc/flounder" groups="device,flounder" />
   <project path="device/htc/flounder-kernel" name="device/htc/flounder-kernel" groups="device,flounder" clone-depth="1" />
   <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead" />
@@ -68,10 +71,13 @@
   <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" clone-depth="1" />
   <project path="device/moto/shamu" name="device/moto/shamu" groups="device,shamu" />
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu" clone-depth="1" />
+  -->
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/smdk4412-common" name="HazyTeam/android_device_samsung_smdk4412-common" remote="github" revision="hazypop" />
   <project path="device/samsung/i9300" name="HazyTeam/android_device_samsung_i9300" remote="github" revision="hazypop" />
+  <!--
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
+  -->
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
@@ -308,7 +314,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />
-  <project path="frameworks/native" name="HazyTeam/android_frameworks_native" remote="github" revision="hazypop" />
+  <project path="frameworks/native" name="HazyTeam/platform_frameworks_native" remote="github" revision="hazypop" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" />
