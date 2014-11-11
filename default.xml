@@ -14,6 +14,8 @@
 
   <default revision="refs/tags/android-5.0.0_r2"
            remote="aosp"
+           sync-c="true"
+           sync-f="true"
            sync-j="4" />
 
   <project path="manifest" name="HazyTeam/platform_manifest" remote="github" revision="lollipop-sam" />
@@ -165,7 +167,9 @@
   <project path="external/google-diff-match-patch" name="platform/external/google-diff-match-patch" groups="pdk-cw-fs" />
   <project path="external/google-fonts/coming-soon" name="platform/external/google-fonts/coming-soon" groups="pdk-cw-fs" />
   <project path="external/google-fonts/dancing-script" name="platform/external/google-fonts/dancing-script" groups="pdk-cw-fs" />
+  <!--
   <project path="external/google-fonts/carrois-gothic-sc" name="platform/external/google-fonts/carrois-gothic-sc" groups="pdk-cw-fs" />
+  -->
   <project path="external/google-fonts/cutive-mono" name="platform/external/google-fonts/cutive-mono" groups="pdk-cw-fs" />
   <project path="external/google-tv-pairing-protocol" name="platform/external/google-tv-pairing-protocol" />
   <project path="external/gtest" name="platform/external/gtest" groups="pdk" />
