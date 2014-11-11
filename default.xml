@@ -15,7 +15,6 @@
   <default revision="refs/tags/android-5.0.0_r2"
            remote="aosp"
            sync-c="true"
-           sync-f="true"
            sync-j="4" />
 
   <project path="manifest" name="HazyTeam/platform_manifest" remote="github" revision="lollipop-sam" />
