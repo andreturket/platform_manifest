@@ -12,6 +12,10 @@
            review="gerrit.omnirom.org"
            fetch="https://github.com/omnirom" />
 
+  <remote  name="NamelessRom"
+           review="gerrit.nameless-rom.org"
+           fetch="https://github.com" />
+
   <default revision="refs/tags/android-5.0.0_r2"
            remote="aosp"
            sync-c="true"
@@ -73,7 +77,7 @@
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu" clone-depth="1" />
   -->
   <project path="device/sample" name="device/sample" groups="pdk" />
-  <project path="device/samsung/smdk4412-common" name="HazyTeam/android_device_samsung_smdk4412-common" remote="github" revision="hazypop" />
+  <project path="device/samsung/smdk4412-common" name="NamelessRom/android_device_samsung_smdk4412-common" remote="github" revision="n-2.0" />
   <project path="device/samsung/i9300" name="HazyTeam/android_device_samsung_i9300" remote="github" revision="hazypop" />
   <!--
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
@@ -167,9 +171,7 @@
   <project path="external/google-diff-match-patch" name="platform/external/google-diff-match-patch" groups="pdk-cw-fs" />
   <project path="external/google-fonts/coming-soon" name="platform/external/google-fonts/coming-soon" groups="pdk-cw-fs" />
   <project path="external/google-fonts/dancing-script" name="platform/external/google-fonts/dancing-script" groups="pdk-cw-fs" />
-  <!--
   <project path="external/google-fonts/carrois-gothic-sc" name="platform/external/google-fonts/carrois-gothic-sc" groups="pdk-cw-fs" />
-  -->
   <project path="external/google-fonts/cutive-mono" name="platform/external/google-fonts/cutive-mono" groups="pdk-cw-fs" />
   <project path="external/google-tv-pairing-protocol" name="platform/external/google-tv-pairing-protocol" />
   <project path="external/gtest" name="platform/external/gtest" groups="pdk" />
@@ -306,7 +308,7 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
+  <project path="frameworks/av" name="NamelessRom/android_frameworks_av" groups="pdk" revision="n-2.0" />
   <project path="frameworks/base" name="HazyTeam/platform_frameworks_base" remote="github" revision="hazypop" groups="pdk-cw-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
@@ -316,7 +318,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="omnirom" revision="android-5.0" groups="pdk" />
+  <project path="frameworks/native" name="NamelessRom/android_frameworks_native" groups="pdk" revision="n-2.0" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" />
@@ -345,7 +347,7 @@
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="omnirom" revision="android-5.0" groups="pdk" />
-  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="omnirom" revision="android-5.0" groups="broadcom_wlan" />
+  <project path="hardware/broadcom/wlan" name="NamelessRom/android_hardware_broadcom_wlan" groups="broadcom_wlan" revision="n-2.0" />
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
   <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" />
   <project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel" />
@@ -361,7 +363,7 @@
   <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel" />
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="omnirom" revision="android-5.0" groups="pdk" />
+  <project path="hardware/libhardware" name="NamelessRom/android_hardware_libhardware" groups="pdk" revision="n-2.0" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="omnirom" revision="android-5.0" groups="pdk" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
@@ -383,7 +385,7 @@
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="omnirom" revision="android-5.0" />
   <project path="hardware/ril" name="android_hardware_ril" remote="omnirom" revision="android-5.0" />
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" groups="exynos5" />
-  <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
+  <project path="hardware/ti/omap3" name="NamelessRom/android_hardware_ti_omap3" revision="n-2.0" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="omnirom" revision="android-5.0" groups="omap4" />
   <project path="hardware/ti/wlan" name="android_hardware_ti_wlan" remote="omnirom" revision="android-5.0" />
@@ -515,7 +517,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
-  <project path="system/core" name="android_system_core" remote="omnirom" revision="android-5.0" groups="pdk" />
+  <project path="system/core" name="NamelessRom/android_system_core" groups="pdk" revision="n-2.0" />
   <project path="system/extras" name="android_system_extras" remote="omnirom" revision="android-5.0" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="android_system_media" groups="pdk" remote="omnirom" revision="android-5.0" />
