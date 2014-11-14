@@ -81,7 +81,7 @@
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu" clone-depth="1" />
   -->
   <project path="device/sample" name="device/sample" groups="pdk" />
-  <project path="device/samsung/smdk4412-common" name="NamelessRom/android_device_samsung_smdk4412-common" remote="github" revision="n-2.0" />
+  <project path="device/samsung/smdk4412-common" name="HazyTeam/android_device_samsung_smdk4412-common" remote="github" revision="hazypop" />
   <project path="device/samsung/i9300" name="HazyTeam/android_device_samsung_i9300" remote="github" revision="hazypop" />
   <!--
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
