@@ -81,6 +81,7 @@
   -->
   <project path="device/samsung/smdk4412-common" name="HazyTeam/android_device_samsung_smdk4412-common" remote="github" revision="hazypop" />
   <project path="device/samsung/i9300" name="HazyTeam/android_device_samsung_i9300" remote="github" revision="hazypop" />
+  <project path="device/oneplus/bacon" name="HazyTeam/android_device_oneplus_bacon" remote="github" revision="lollipop" />
 
   <project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" remote="cm" revision="cm-12.0" />
   <project path="device/sample" name="device/sample" groups="pdk" />
