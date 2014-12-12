@@ -387,7 +387,7 @@
   <project path="hardware/qcom/display-caf/msm8974" name="CyanogenMod/android_hardware_qcom_display" groups="qcom,qcom_display" remote="github" revision="cm-12.0-caf-8974" />
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="github" revision="cm-12.0" groups="qcom" />
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" remote="github" groups="qcom" revision="cm-12.0" />
-  <project path="hardware/qcom/media/default" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" remote="github" revision="cm-12.0" />
+  <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" remote="github" revision="cm-12.0" />
 <!--
   <project path="hardware/qcom/media-caf/msm8960" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" remote="github" revision="cm-12.0-caf-8960" />
   <project path="hardware/qcom/media-caf/msm8226" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" remote="github" revision="cm-12.0-caf-8226" />
@@ -409,6 +409,7 @@
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
+  <project path="packages/apps/AudioFX" name="CyanogenMod/android_packages_apps_AudioFX" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="CyanogenMod/android_packages_apps_Bluetooth" remote="github" revision="cm-12.0" />
   <project path="packages/apps/BluetoothExt" name="CyanogenMod/android_packages_apps_BluetoothExt" remote="github" revision="cm-12.0" />
@@ -436,7 +437,6 @@
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
-  <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
