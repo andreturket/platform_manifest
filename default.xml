@@ -290,8 +290,8 @@
   <project path="external/stagefright-plugins" name="CyanogenMod/android_external_stagefright-plugins" remote="github" revision="cm-12.0" />
   
   <!-- Koush's Superuser -->
-  <project path="external/koush/Superuser" name="Euphoria-OS/android_external_koush_Superuser" remote="Euphoria-OS" revision="lollipop" />
-  <project path="external/koush/Widgets" name="Euphoria-OS/android_external_koush_Widgets" remote="Euphoria-OS" revision="lollipop" />
+  <project path="external/koush/Superuser" name="HazyTeam/android_external_koush_Superuser" remote="HazyTeam" revision="hazypop" />
+  <project path="external/koush/Widgets" name="HazyTeam/android_external_koush_Widgets" remote="HazyTeam" revision="hazypop" />
   
   <project path="external/stlport" name="platform/external/stlport" groups="pdk" />
   <project path="external/strace" name="platform/external/strace" groups="pdk-cw-fs" />
