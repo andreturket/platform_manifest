@@ -522,8 +522,8 @@
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" />
   
   <!-- Koush's Superuser -->
-  <project path="external/koush/Superuser" name="HazyTeam/android_external_koush_Superuser" remote="HazyTeam" revision="hazypop" />
-  <project path="external/koush/Widgets" name="HazyTeam/android_external_koush_Widgets" remote="HazyTeam" revision="hazypop" />
+  <project path="external/koush/Superuser" name="HazyTeam/android_external_koush_Superuser" remote="github" revision="hazypop" />
+  <project path="external/koush/Widgets" name="HazyTeam/android_external_koush_Widgets" remote="github" revision="hazypop" />
   
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
   <project path="tools/loganalysis" name="platform/tools/loganalysis" groups="notdefault,tradefed" />
