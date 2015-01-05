@@ -16,7 +16,7 @@
 
   <project path="manifest" name="HazyTeam/platform_manifest" remote="github" revision="hazypop" />
 
-  <project path="build" name="HazyTeam/platform_build_test" remote="github" revision="lolli-sammy" groups="pdk,tradefed" >
+  <project path="build" name="HazyTeam/platform_build_test" remote="github" revision="hazypop" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
