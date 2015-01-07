@@ -77,6 +77,7 @@
   <project path="device/oppo/msm8974-common" name="crdroidandroid/android_device_oppo_msm8974-common" remote="github" revision="cm-12.0" />
   <project path="device/qcom/common" name="crdroidandroid/android_device_qcom_common" remote="github" revision="cm-12.0" />
   <project path="device/oppo/common" name="crdroidandroid/android_device_oppo_common" remote="github" revision="cm-12.0" />
+  <project path="device/samsung/p3100" name="HazyTeam/android_device_samsung_p3100" remote="github" revision="hazypop" />
   <project path="kernel/oneplus/msm8974" name="crdroidandroid/android_kernel_oneplus_msm8974" remote="github" revision="cm-12.0" />
   <project path="vendor/oneplus" name="crdroidandroid/proprietary_vendor_oneplus" remote="github" revision="cm-12.0" />
   <project path="vendor/oppo" name="crdroidandroid/proprietary_vendor_oppo" remote="github" revision="cm-12.0" />
@@ -407,10 +408,14 @@
   <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" remote="github" revision="cm-12.0" groups="qcom_wlan" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" remote="github" revision="cm-12.0" groups="pdk" />
   <project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-12.0" />
-  <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" groups="exynos5" />
-  <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
-  <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
-  <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
+  <project path="hardware/samsung_slsi/exynos5" name="CyanogenMod/android_hardware_samsung_slsi_exynos5" revision="cm-12.0" />
+  <project path="hardware/ti/omap3" name="CyanogenMod/android_hardware_ti_omap3" remote="github" revision="cm-12.0" />
+  <project path="hardware/ti/omap4-aah" name="CyanogenMod/android_hardware_ti_omap4-aah" remote="github" revision="cm-12.0" />
+  <project path="hardware/ti/omap4xxx" name="CyanogenMod/android_hardware_ti_omap4xxx" groups="github" revision="cm-12.0" />
+  <project path="hardware/ti/wlan" name="CyanogenMod/android_hardware_ti_wlan" remote="github" revision="cm-12.0" />
+  <project path="hardware/ti/wpan" name="CyanogenMod/android_hardware_ti_wpan" remote="github" revision="cm-12.0" />
+  <project path="hardware/ti/omap3" name="CyanogenMod/android_hardware_ti_omap3" remote="github" revision="cm-12.0" />
+  
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
