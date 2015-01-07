@@ -73,7 +73,7 @@
   -->
   <project path="device/samsung/smdk4412-common" name="ArchiDroid/android_device_samsung_smdk4412-common" remote="github" revision="cm-12.0" />
   <project path="device/samsung/i9300" name="HazyTeam/android_device_samsung_i9300" remote="github" revision="test2" />
-  <project path="device/samsung/p3100" name="HazyTeam/android_device_samsung_p3100" remote="github" revision="hazypop"
+  <project path="device/samsung/p3100" name="HazyTeam/android_device_samsung_p3100" remote="github" revision="hazypop" />
   <project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" remote="github" revision="cm-12.0" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
