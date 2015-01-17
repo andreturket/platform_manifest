@@ -53,7 +53,7 @@
   <project path="device/lge/hammerhead" name="HazyTeam/android_device_lge_hammerhead" remote="github" revision="hazypop" />
   <project path="device/lge/mako" name="HazyTeam/android_device_lge_mako" remote="github" revision="hazypop" />
   <project path="device/lge/d855" name="HazyTeam/android_device_lge_d855" remote="github" revision="hazypop" />
-  <project path="device/htc/m8" name="HazyTeam/android_device_lge_m8" remote="github" revision="hazypop" />
+  <project path="device/htc/m8" name="HazyTeam/android_device_htc_m8" remote="github" revision="hazypop" />
   <project path="device/samsung/manta" name="HazyTeam/device_samsung_manta" remote="github" revision="hazypop" />
   <project path="device/samsung/p3100" name="HazyTeam/android_device_samsung_p3100" remote="github" revision="hazypop" />
   <project path="device/oneplus/bacon" name="HazyTeam/android_device_oneplus_bacon" remote="github" revision="lolli-legacy" />
