@@ -470,7 +470,7 @@
   <project path="packages/providers/TelephonyProvider" name="CyanogenMod/android_packages_providers_TelephonyProvider" />
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
-  <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" revision="refs/tags/android-5.0.2_r1" />
+  <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="packages/services/Mms" name="CyanogenMod/android_packages_services_Mms" />
