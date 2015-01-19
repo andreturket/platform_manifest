@@ -56,6 +56,7 @@
   <project path="device/samsung/manta" name="HazyTeam/device_samsung_manta" remote="github" revision="hazypop" />
   <project path="device/samsung/p3100" name="HazyTeam/android_device_samsung_p3100" remote="github" revision="hazypop" />
   <project path="device/oneplus/bacon" name="HazyTeam/android_device_oneplus_bacon" remote="github" revision="lolli-legacy" />
+  <project path="device/lge/g3-common" name="HazyTeam/android_device_lge_g3-common" remote="github" revision="master" />
   <project path="device/lge/d855" name="HazyTeam/android_device_lge_d855" remote="github" revision="hazypop" />
   <project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" />
   <project path="device/sample" name="device/sample" groups="pdk" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
