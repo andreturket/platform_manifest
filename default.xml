@@ -57,7 +57,7 @@
   <project patch="device/lge/hammerhead" name="HazyTeam/device_lge_hammerhead" remote="github" revision="hazypop" />
   <project patch="device/oneplus/bacon" name="HazyTeam/android_device_oneplus_bacon" remote="github" revision="lolli-legacy" />
   <project patch="device/lge/mako" name="HazyTeam/android_device_lge_mako" remote="github" revision="hazypop" />
-  <project patch="device/samsung/manta" name="HazyTeam/android_device_htc_m8" remote="github" revision="hazypop" />
+  <project patch="device/samsung/manta" name="HazyTeam/device_samsung manta" remote="github" revision="hazypop" />
   <project patch="device/lge/d802" name="HazyTeam/android_device_lge_d802" remote="github" revision="hazypop" />
   <project patch="device/samsung/p3100" name="HazyTeam/android_device_samsung_p3100" remote="github" revision="hazypop" />
   <project patch="device/asus/flo" name="HazyTeam/device_asus_flo" remote="github" revision="hazypop" />
