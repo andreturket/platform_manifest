@@ -60,6 +60,8 @@
   <project path="device/samsung/manta" name="HazyTeam/device_samsung_manta" remote="github" revision="hazypop" />
   <project path="device/lge/d802" name="HazyTeam/android_device_lge_d802" remote="github" revision="hazypop" />
   <project path="device/samsung/p3100" name="HazyTeam/android_device_samsung_p3100" remote="github" revision="hazypop" />
+  <project path="device/samsung/jflte" name="HazyTeam/android_device_samsung_jflte" remote="github" revision="lolli-legacy" />
+  <project path="device/samsung/jf-common" name="HazyTeam/android_device_samsung_jf-common" remote="github" revision="lolli-legacy" />
   <project path="device/asus/flo" name="HazyTeam/device_asus_flo" remote="github" revision="hazypop" />
 
 
