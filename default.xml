@@ -403,7 +403,7 @@
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" />
   <project path="packages/apps/Mms" name="Euphoria-OS-Legacy/android_packages_apps_Mms" remote="github" revision="lollipop" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
-  <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
+  <project path="packages/apps/AudioFX" name="Euphoria-OS/android_packages_apps_AudioFX" remote="Euphoria-OS" revision="lollipop" />
   <project path="packages/apps/Nfc" name="Euphoria-OS-Legacy/android_packages_apps_Nfc" remote="github" revision="lollipop" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" />
   <project path="packages/apps/PackageInstaller" name="Euphoria-OS/android_packages_apps_PackageInstaller" remote="Euphoria-OS" revision="lollipop" />
