@@ -561,7 +561,6 @@
   <project path="device/qcom/sepolicy" name="Euphoria-OS-Legacy/android_device_qcom_sepolicy" remote="github" revision="lollipop" />
 
   <!-- Apps -->
-  <project path="packages/apps/AudioFX" name="Euphoria-OS/android_packages_apps_AudioFX" remote="Euphoria-OS" revision="lollipop" />
   <project path="packages/apps/BluetoothExt" name="Euphoria-OS-Legacy/android_packages_apps_BluetoothExt" remote="github" revision="lollipop" />
   <project path="packages/apps/CustomWallpapers" name="Euphoria-OS/android_packages_apps_CustomWallpapers" remote="Euphoria-OS" revision="lollipop" />
   <project path="packages/apps/Eleven" name="Euphoria-OS/android_packages_apps_Eleven" remote="Euphoria-OS" revision="lollipop" />
