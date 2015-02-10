@@ -56,8 +56,7 @@
   <project path="device/samsung/i9100" name="HazyTeam/android_device_samsung_i9100" remote="github" revision="hazypop" />
   <project path="device/samsung/galaxys2-common" name="HazyTeam/android_device_samsung_galaxys2-common" remote="github" revision="hazypop" />
   <project path="device/samsung/i9300" name="HazyTeam/android_device_samsung_i9300" remote="github" revision="test2" />
-  <project path="kernel/samsung/smdk4412" name="ArchiDroid/android_kernel_samsung_smdk4412" remote="github" revision="cm-12.0" />
-  <project path="kernel/samsung/smdk4412-s2" name="sootihazy/android_kernel_samsung_smdk4412" remote="github" revision="cm-12.0" />
+  <project path="kernel/samsung/smdk4412" name="HazyTeam/android_kernel_samsung_smdk4412" remote="github" revision="cm-12.0" />
   <project path="vendor/samsung" name="ArchiDroid/proprietary_vendor_samsung" remote="github" revision="cm-12.0" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
