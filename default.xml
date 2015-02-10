@@ -25,7 +25,7 @@
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="Euphoria-OS-Legacy/android_art" groups="pdk" remote="github" revision="lollipop" />
-  <project path="bionic" name="sootihazy/android_bionic" remote="github"  revision="hazypop" groups="pdk" />
+  <project path="bionic" name="sootihazy/android_bionic" remote="github"  revision="cm-12.0" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
@@ -281,7 +281,7 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
-  <project path="frameworks/av" name="sootihazy/android_frameworks_av" remote="github" revision="hazypop" groups="pdk" />
+  <project path="frameworks/av" name="sootihazy/android_frameworks_av" remote="github" revision="cm-12.0" groups="pdk" />
   <project path="frameworks/base" name="HazyTeam/platform_frameworks_base" remote="github" revision="lolli-legacy" groups="pdk-cw-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
@@ -291,7 +291,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />
-  <project path="frameworks/native" name="sootihazy/android_frameworks_native" remote="github" revision="hazypop" groups="pdk" />
+  <project path="frameworks/native" name="sootihazy/android_frameworks_native" remote="github" revision="cm-12.0" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
   <project path="frameworks/opt/bluetooth" name="Euphoria-OS-Legacy/android_frameworks_opt_bluetooth" groups="pdk-cw-fs" remote="github" revision="lollipop" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" />
@@ -354,8 +354,8 @@
   <project path="hardware/qcom/power" name="Euphoria-OS-Legacy/android_hardware_qcom_power" groups="qcom" remote="github" revision="lollipop" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
   <project path="hardware/qcom/wlan" name="Euphoria-OS-Legacy/android_hardware_qcom_wlan" groups="qcom_wlan" remote="github" revision="lollipop" />
-  <project path="hardware/ril" name="sootihay/android_hardware_ril" remote="github" revision="hazypop" groups="pdk" />
-  <project path="hardware/samsung" name="sootihazy/android_hardware_samsung" remote="github" revision="hazypop" />
+  <project path="hardware/ril" name="sootihay/android_hardware_ril" remote="github" revision="cm-12.0" groups="pdk" />
+  <project path="hardware/samsung" name="sootihazy/android_hardware_samsung" remote="github" revision="cm-12.0" />
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" groups="exynos5" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
@@ -486,7 +486,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
-  <project path="system/core" name="sootihazy/android_system_core" groups="pdk" remote="github" revision="hazypop" />
+  <project path="system/core" name="sootihazy/android_system_core" groups="pdk" remote="github" revision="cm-12.0" />
   <project path="system/extras" name="Euphoria-OS-Legacy/android_system_extras" groups="pdk" remote="github" revision="lollipop" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="Euphoria-OS-Legacy/android_system_media" groups="pdk" remote="github" revision="lollipop" />
