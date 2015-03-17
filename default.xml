@@ -543,7 +543,6 @@
   <project path="external/google" name="omnirom/android_external_google" remote="Euphoria-OS" revision="android-5.1" />
   <project path="external/libncurses" name="omnirom/android_external_libncurses" remote="github" revision="android-5.1" />
   <project path="external/ntfs-3g" name="omnirom/android_external_ntfs-3g" remote="github" revision="android-5.1" />
-  <project path="external/stagefright-plugins" name="omnirom/android_external_stagefright-plugins" remote="github" revision="android-5.1" />
 
   <!-- Su -->
   <project path="system/extras/su" name="omnirom/android_system_extras_su" remote="Euphoria-OS" revision="android-5.1" />
