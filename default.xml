@@ -11,6 +11,10 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
+  <remote  name="omnirom"
+           review="gerrit.omnirom.org"
+           fetch="https://github.com/omnirom" />
+
   <default revision="refs/tags/android-5.1.0_r1"
            remote="aosp"
            sync-c="true"
