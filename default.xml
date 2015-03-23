@@ -534,7 +534,7 @@
   <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" remote="github" revision="cm-12.0" />
 
   <!-- Qcom softap -->
-  <project path="system/qcom" name="Euphoria-OS-Legacy/android_system_qcom" remote="github" revision="lollipop" />
+  <project path="system/qcom" name="omnirom/android_system_qcom" remote="github" revision="android-5.1" />
 
   <!-- Qcom sepolicy -->
   <project path="device/qcom/sepolicy" name="omnirom/android_device_qcom_sepolicy" remote="github" revision="android-5.1" />
