@@ -432,7 +432,7 @@
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" />
-  <project path="packages/services/Mms" name="platform/packages/services/Mms" />
+  <project path="packages/services/Mms" name="omnirom/android_packages_services_Mms" remote="github" revision="android-5.1" />
   <project path="packages/services/Telecomm" name="CyanogenMod/android_packages_services_Telecomm" remote="github" revision="cm-12.0" />
   <project path="packages/services/Telephony" name="omnirom/android_packages_services_Telephony" remote="github" revision="android-5.1" />
   <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" />
