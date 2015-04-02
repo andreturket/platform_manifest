@@ -11,9 +11,6 @@
   <remote  name="github"
            fetch="https://github.com" />
 
-  <remote  name="MrTumbles"
-           fetch="https://github.com" />
-
   <project path="manifest" name="HazyTeam/platform_manifest" remote="github" revision="lolli-legacy" />
 
   <project path="build" name="HazyTeam/platform_build_test" groups="pdk,tradefed" remote="github" revision="lolli-sammy" >
