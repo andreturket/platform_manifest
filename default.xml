@@ -16,15 +16,15 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="manifest" name="HazyTeam/platform_manifest" remote="github" revision="lolli-sammy" />
+  <project path="manifest" name="mnemonyc/platform_manifest" remote="github" revision="lolli-sammy" />
 
-  <project path="build" name="HazyTeam/platform_build_test" remote="github" revision="lolli-sammy" groups="pdk,tradefed" >
+  <project path="build" name="mnemonyc/platform_build_test" remote="github" revision="lolli-sammy" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" remote="github" revision="cm-12.1" />
-  <project path="bionic" name="HazyTeam/android_bionic" remote="github"  revision="lolli-sammy" groups="pdk" />
+  <project path="bionic" name="mnemonyc/android_bionic" remote="github"  revision="lolli-sammy" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
@@ -51,10 +51,10 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu" />
-  <project path="device/samsung/smdk4412-common" name="HazyTeam/android_device_samsung_smdk4412-common" remote="github" revision="lolli-sammy" />
-  <project path="device/samsung/i9300" name="HazyTeam/android_device_samsung_i9300" remote="github" revision="test2" />
-  <project path="kernel/samsung/smdk4412" name="ArchiDroid/android_kernel_samsung_smdk4412" remote="github" revision="cm-12.0" />
-  <project path="vendor/samsung" name="ArchiDroid/proprietary_vendor_samsung" remote="github" revision="cm-12.0" />
+  <project path="device/samsung/smdk4412-common" name="mnemonyc/android_device_samsung_smdk4412-common" remote="github" revision="lolli-sammy" />
+  <project path="device/samsung/i9300" name="mnemonyc/android_device_samsung_i9300" remote="github" revision="test2" />
+  <project path="kernel/samsung/smdk4412" name="ArchiDroid/android_kernel_samsung_smdk4412" remote="github" revision="cm-12.1" />
+  <project path="vendor/samsung" name="ArchiDroid/proprietary_vendor_samsung" remote="github" revision="cm-12.1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -280,7 +280,7 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
   <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" remote="github" revision="cm-12.1" groups="pdk" />
-  <project path="frameworks/base" name="HazyTeam/platform_frameworks_base" remote="github" revision="lolli_test-5.1" groups="pdk-cw-fs" />
+  <project path="frameworks/base" name="mnemonyc/platform_frameworks_base" remote="github" revision="lolli_test-5.1" groups="pdk-cw-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -352,7 +352,7 @@
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
   <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" groups="qcom_wlan" remote="github" revision="cm-12.1" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" remote="github" revision="cm-12.1" groups="pdk" />
-  <project path="hardware/samsung" name="ArchiDroid/android_hardware_samsung" remote="github" revision="cm-12.0" />
+  <project path="hardware/samsung" name="ArchiDroid/android_hardware_samsung" remote="github" revision="cm-12.1" />
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" groups="exynos5" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
@@ -393,7 +393,7 @@
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
   <project path="packages/apps/SamsungServiceMode" name="CyanogenMod/android_packages_apps_SamsungServiceMode" remote="github" revision="cm-12.0" />
-  <project path="packages/apps/Settings" name="HazyTeam/platform_packages_apps_settings" remote="github" revision="lolli-sammy" />
+  <project path="packages/apps/Settings" name="mnemonyc/platform_packages_apps_settings" remote="github" revision="lolli-sammy" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -504,7 +504,7 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-  <project path="vendor/hazy" name="HazyTeam/android_vendor_hazy" remote="github" revision="hazypop" />
+  <project path="vendor/hazy" name="mnemonyc/android_vendor_hazy" remote="github" revision="hazypop" />
 
   <!-- External -->
   <project path="external/android-visualizer" name="CyanogenMod/android_external_android-visualizer" remote="github" revision="cm-12.1" />
