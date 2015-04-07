@@ -11,7 +11,7 @@
   <remote  name="github"
            fetch="https://github.com" />
 
-  <project path="build" name="HazyTeam/android_build" groups="pdk,tradefed" remote="github" revision="lolli-legacy" >
+  <project path="build" name="HazyTeam/platform_build_test" groups="pdk,tradefed" remote="github" revision="lolli-legacy" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
