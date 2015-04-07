@@ -13,7 +13,7 @@
 
   <project path="manifest" name="HazyTeam/platform_manifest" remote="github" revision="lolli-legacy" />
 
-  <project path="build" name="HazyTeam/platform_build_test" groups="pdk,tradefed" remote="github" revision="lolli-sammy" >
+  <project path="build" name="HazyTeam/platform_build_test" groups="pdk,tradefed" remote="github" revision="lolli-legacy" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -525,7 +525,7 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-  <project path="vendor/hazy" name="HazyTeam/android_vendor_hazy" remote="github" revision="hazypop" />
+  <project path="vendor/hazy" name="HazyTeam/android_vendor_hazy" remote="github" revision="hazypop_test" />
 
   <!-- External -->
   <project path="external/android-visualizer" name="CyanogenMod/android_external_android-visualizer" remote="github" revision="cm-12.1" />
