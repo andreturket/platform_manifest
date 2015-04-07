@@ -11,7 +11,7 @@
   <remote  name="github"
            fetch="https://github.com" />
 
-  <project path="build" name="HazyTeam/android_build" groups="pdk,tradefed" remote="github" revision="lolli_legacy" >
+  <project path="build" name="HazyTeam/android_build" groups="pdk,tradefed" remote="github" revision="lolli-legacy" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -410,7 +410,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="HazyTeam/platform_packages_apps_settings" remote="github" revision="lolli_sammy" />
+  <project path="packages/apps/Settings" name="HazyTeam/platform_packages_apps_settings" remote="github" revision="lolli-sammy" />
   <project path="packages/apps/SmartCardService" name="Euphoria-OS-Legacy/android_packages_apps_SmartCardService" remote="github" revision="lollipop-5.1" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
