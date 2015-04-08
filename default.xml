@@ -376,7 +376,7 @@
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="Euphoria-OS-Legacy/android_packages_apps_Bluetooth" groups="pdk-cw-fs" remote="github" revision="lollipop-5.1" />
-  <project path="packages/apps/Browser" name="Euphoria-OS/android_packages_apps_Browser" remote="github" revision="lollipop-5.1" />
+  <project path="packages/apps/Browser" name="HazyTeam/platform_packages_apps_browser" remote="github" revision="hazypop" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
   <project path="packages/apps/Calendar" name="Euphoria-OS/android_packages_apps_Calendar" remote="github" revision="lollipop-5.1" />
   <project path="packages/apps/Camera" name="platform/packages/apps/Camera" />
