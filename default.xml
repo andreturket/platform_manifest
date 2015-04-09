@@ -57,6 +57,7 @@
   <project path="device/samsung/jflte" name="HazyTeam/android_device_samsung_jflte" remote="github" revision="lolli-legacy" />
   <project path="device/samsung/jf-common" name="HazyTeam/android_device_samsung_jf-common" remote="github" revision="lolli-legacy" />
   <project path="device/asus/flo" name="HazyTeam/device_asus_flo" remote="github" revision="hazypop" />
+  <project path="device/moto/shamu" name="HazyTeam/android_device_moto_shamu" remote="github" revision="master" />
 
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
