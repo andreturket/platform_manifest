@@ -8,6 +8,10 @@
   <remote  name="github"
            fetch=".." />
 
+  <remote name="aicp"
+           fetch="https://github.com/"
+           review="gerrit.aicp-rom.com" />
+
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
