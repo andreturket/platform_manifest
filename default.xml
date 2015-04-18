@@ -55,7 +55,7 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu" />
-  <project path="device/samsung/smdk4412-common" name="HazyTeam/android_device_samsung_smdk4412-common" remote="github" revision="lolli-sammy" />
+  <project path="device/samsung/smdk4412-common" name="NamelessRom/android_device_samsung_smdk4412-common" remote="github" revision="n-2.0" />
   <project path="device/samsung/smdk4412-qcom-common" name="NamelessRom/android_device_samsung_smdk4412-qcom-common" remote="github" revision="n-2.0" />
   <project path="device/samsung/i9300" name="HazyTeam/android_device_samsung_i9300" remote="github" revision="test2" />
   <project path="kernel/samsung/smdk4412" name="NamelessRom/android_kernel_samsung_smdk4412" remote="github" revision="n-2.0" />
