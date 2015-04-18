@@ -53,7 +53,7 @@
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu" />
   <project path="device/samsung/smdk4412-common" name="HazyTeam/android_device_samsung_smdk4412-common" remote="github" revision="lolli-sammy" />
   <project path="device/samsung/i9300" name="HazyTeam/android_device_samsung_i9300" remote="github" revision="test2" />
-  <project path="kernel/samsung/smdk4412" name="NamelessRom/android_kernel_samsung_smdk4412" remote="github" revision="n-2.0" />
+  <project path="kernel/samsung/smdk4412" name="ArchiDroid/android_kernel_samsung_smdk4412" remote="github" revision="cm-12.1" />
   <project path="vendor/samsung" name="ArchiDroid/proprietary_vendor_samsung" remote="github" revision="cm-12.1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
