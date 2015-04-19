@@ -243,7 +243,7 @@
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs" />
   <project path="external/lzma" name="platform/external/lzma" />
   <project path="external/lsof" name="CyanogenMod/android_external_lsof" remote="github" revision="cm-12.1" />
-  <project path="external/lz4" name="CyanogenMod/android_external_lz4" remote="github" revision="cm-12.1" />
+  <!-- project path="external/lz4" name="CyanogenMod/android_external_lz4" remote="github" revision="cm-12.1" / -->
   <project path="external/lzo" name="CyanogenMod/android_external_lzo" remote="github" revision="cm-12.1" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk-cw-fs" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
