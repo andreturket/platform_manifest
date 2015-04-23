@@ -16,7 +16,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="manifest" name="HazyTeam/platform_manifest" remote="github" revision="lolli-sammy" />
+  <project path="manifest" name="HazyTeam/platform_manifest" remote="github" revision="lolli-yureka" />
 
   <project path="build" name="HazyTeam/platform_build_test" remote="github" revision="lolli-sammy" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -24,7 +24,7 @@
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" remote="github" revision="cm-12.1" />
-  <project path="bionic" name="ArchiDroid/android_bionic" remote="github"  revision="cm-12.1" groups="pdk" />
+  <project path="bionic" name="CyanogenMod/android_bionic" remote="github"  revision="cm-12.1" groups="pdk" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="cts" name="CyanogenMod/android_cts" groups="cts,pdk-cw-fs" remote="github" revision="cm-12.1" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" />
@@ -336,7 +336,7 @@
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
-  <project path="frameworks/av" name="ArchiDroid/android_frameworks_av" remote="github" revision="cm-12.1" groups="pdk" />
+  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" remote="github" revision="cm-12.1" groups="pdk" />
   <project path="frameworks/base" name="HazyTeam/platform_frameworks_base" remote="github" revision="lolli_test-5.1" groups="pdk-cw-fs" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" remote="github" revision="cm-12.1" />
@@ -346,7 +346,7 @@
   <project path="frameworks/minikin" name="CyanogenMod/android_frameworks_minikin" groups="pdk-cw-fs" remote="github" revision="cm-12.1" />
   <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml" remote="github" revision="cm-12.1" />
   <project path="frameworks/multidex" name="CyanogenMod/android_frameworks_multidex" groups="pdk-cw-fs" remote="github" revision="cm-12.1" />
-  <project path="frameworks/native" name="ArchiDroid/android_frameworks_native" remote="github" revision="cm-12.1" groups="pdk" />
+  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" remote="github" revision="cm-12.1" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="CyanogenMod/android_frameworks_opt_bitmap" remote="github" revision="cm-12.1" />
   <project path="frameworks/opt/bluetooth" name="CyanogenMod/android_frameworks_opt_bluetooth" groups="pdk-cw-fs" remote="github" revision="cm-12.1" />
   <project path="frameworks/opt/calendar" name="CyanogenMod/android_frameworks_opt_calendar" remote="github" revision="cm-12.1" />
@@ -501,8 +501,8 @@
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" />
   <project path="packages/services/Mms" name="CyanogenMod/android_packages_services_Mms" remote="github" revision="cm-12.1" />
-  <project path="packages/services/Telecomm" name="ArchiDroid/android_packages_services_Telecomm" remote="github" revision="cm-12.1" />
-  <project path="packages/services/Telephony" name="ArchiDroid/android_packages_services_Telephony" remote="github" revision="cm-12.1" />
+  <project path="packages/services/Telecomm" name="CyanogenMod/android_packages_services_Telecomm" remote="github" revision="cm-12.1" />
+  <project path="packages/services/Telephony" name="CyanogenMod/android_packages_services_Telephony" remote="github" revision="cm-12.1" />
   <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" />
   <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" />
   <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" />
