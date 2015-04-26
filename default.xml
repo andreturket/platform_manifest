@@ -51,10 +51,9 @@
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="CyanogenMod/android_device_google_atv" groups="device" remote="github" revision="cm-12.1" />
   <project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" remote="github" revision="cm-12.1" />
-  <project path="device/samsung/smdk4412-common" name="HazyTeam/android_device_samsung_smdk4412-common" remote="github" revision="lolli-sammy" />
-  <project path="device/samsung/i9300" name="HazyTeam/android_device_samsung_i9300" remote="github" revision="test2" />
-  <project path="kernel/samsung/smdk4412" name="ArchiDroid/android_kernel_samsung_smdk4412" remote="github" revision="cm-12.1" />
-  <project path="vendor/samsung" name="ArchiDroid/proprietary_vendor_samsung" remote="github" revision="cm-12.1" />
+  <project path="device/yu/tomato" name="HazyTeam/android_device_yu_tomato" remote="github" revision="cm-12.0" />
+  <project path="kernel/yu/msm8916" name="CyanogenMod/android_kernel_yu_msm8916" remote="github" revision="cm-12.0" />
+  <project path="vendor/yu" name="TheMuppets/proprietary_vendor_yu" remote="github" revision="cm-12.0" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -433,8 +432,6 @@
   <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" groups="qcom_wlan" remote="github" revision="cm-12.1" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="hardware/ril-caf" name="CyanogenMod/android_hardware_ril" groups="pdk" revision="cm-12.1-caf" remote="github" />
-  <project path="hardware/samsung" name="ArchiDroid/android_hardware_samsung" remote="github" revision="cm-12.1" />
-  <project path="hardware/samsung_slsi/exynos5" name="CyanogenMod/android_hardware_samsung_slsi_exynos5" remote="github" revision="cm-12.1" />
   <project path="hardware/ti/omap4" name="CyanogenMod/android_hardware_ti_omap4" remote="github" revision="cm-12.1" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" remote="aosp" />
   <project path="hardware/ti/omap4xxx" name="CyanogenMod/android_hardware_ti_omap4xxx" remote="github" revision="cm-12.1" />
@@ -478,7 +475,6 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/SamsungServiceMode" name="CyanogenMod/android_packages_apps_SamsungServiceMode" remote="github" revision="cm-12.1" />
   <project path="packages/apps/Settings" name="HazyTeam/platform_packages_apps_settings" remote="github" revision="lolli-sammy" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
@@ -586,11 +582,9 @@
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" />
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
   <project path="tools/loganalysis" name="platform/tools/loganalysis" groups="notdefault,tradefed" />
-  <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
-  <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
   <project path="vendor/hazy" name="HazyTeam/android_vendor_hazy" remote="github" revision="hazypop" />
   
 </manifest>
