@@ -50,7 +50,7 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="CyanogenMod/android_device_google_atv" groups="device" remote="github" revision="cm-12.1" />
-  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="gh" revision="cm-12.1" />
+  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-12.1" />
   <project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" remote="github" revision="cm-12.1" />
   <project path="device/yu/tomato" name="HazyTeam/android_device_yu_tomato" remote="github" revision="cm-12.0" />
   <project path="kernel/yu/msm8916" name="CyanogenMod/android_kernel_yu_msm8916" remote="github" revision="cm-12.0" />
@@ -413,7 +413,7 @@
   <project path="hardware/qcom/display-caf/msm8960" name="CyanogenMod/android_hardware_qcom_display" groups="qcom,qcom_display" revision="cm-12.1-caf-8960" remote="github" />
   <project path="hardware/qcom/display-caf/msm8974" name="CyanogenMod/android_hardware_qcom_display" groups="qcom,qcom_display" revision="cm-12.1-caf-8974" remote="github" />
   <project path="hardware/qcom/display-caf/msm8994" name="CyanogenMod/android_hardware_qcom_display" groups="qcom,qcom_display" revision="cm-12.1-caf-8994" remote="github" />
-  <project path="hardware/qcom/fm" name="CyanogenMod/android_hardware_qcom_fm" remote="gh" revision="cm-12.1" />
+  <project path="hardware/qcom/fm" name="CyanogenMod/android_hardware_qcom_fm" remote="github" revision="cm-12.1" />
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" groups="qcom" remote="github" revision="cm-12.1" />
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" groups="qcom" remote="github" revision="cm-12.1" />
   <project path="hardware/qcom/media/default" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" remote="github" revision="cm-12.1" />
