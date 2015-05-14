@@ -508,6 +508,7 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
   <project path="vendor/hazy" name="HazyTeam/android_vendor_hazy" remote="github" revision="hazypop" />
+  <project path="vendor/cmsdk" name="CyanogenMod/cm_platform_sdk" remote="github" revision="cm-12.1"/>
 
   <!-- External -->
   <project path="external/android-visualizer" name="Euphoria-OS/android_external_android-visualizer" remote="github" revision="lollipop" />
