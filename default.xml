@@ -524,6 +524,7 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+  <project path="vendor/cmsdk" name="CyanogenMod/cm_platform_sdk" remote="github" revision="cm-12.1"/>
 
   <!-- Custom projects -->
 
