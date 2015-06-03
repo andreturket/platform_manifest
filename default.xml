@@ -52,9 +52,11 @@
   <project path="device/google/atv" name="CyanogenMod/android_device_google_atv" groups="device" remote="github" revision="cm-12.1" />
   <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-12.1" />
   <project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" remote="github" revision="cm-12.1" />
-  <project path="device/yu/tomato" name="HazyTeam/android_device_yu_tomato" remote="github" revision="cm-12.0" />
-  <project path="kernel/yu/msm8916" name="CyanogenMod/android_kernel_yu_msm8916" remote="github" revision="cm-12.0" />
-  <project path="vendor/yu" name="TheMuppets/proprietary_vendor_yu" remote="github" revision="cm-12.0" />
+  <project path="kernel/cyanogen/msm8916" name="CyanogenMod/android_kernel_cyanogen_msm8916" remote="github" revision="cm-12.1" />
+  <project path="device/yu/tomato" name="HazyTeam/android_device_yu_tomato" remote="github" revision="hazypop" />
+  <project path="vendor/yu" name="TheMuppets/proprietary_vendor_yu" remote="github" revision="cm-12.1" />
+  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-12.1" />
+  <project path="device/cyanogen/msm8939-common" name="CyanogenMod/android_device_cyanogen_msm8939-common" remote="github" revision="cm-12.1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -250,6 +252,7 @@
   <project path="external/mesa3d" name="platform/external/mesa3d" />
   <project path="external/messageformat" name="platform/external/messageformat" groups="pdk-cw-fs" />
   <project path="external/mksh" name="CyanogenMod/android_external_mksh" groups="pdk" remote="github" revision="cm-12.1" />
+  <project path="external/mm-dash" name="CyanogenMod/android_external_mm-dash" remote="github" revision="cm-12.1" />
   <project path="external/mockito" name="platform/external/mockito" groups="pdk-cw-fs" />
   <project path="external/mockwebserver" name="platform/external/mockwebserver" groups="pdk-cw-fs" />
   <project path="external/mp4parser" name="platform/external/mp4parser" groups="pdk-cw-fs" />
