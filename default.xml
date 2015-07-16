@@ -51,8 +51,6 @@
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="CyanogenMod/android_device_google_atv" groups="device" remote="github" revision="cm-12.1" />
   <project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" remote="github" revision="cm-12.1" />
-  <project path="device/huawei/viva" name="HazyTeam/android_device_viva" remote="github" revision="cm-12.0" />
-  <project path="kernel/huawei/viva" name="ShevT/android_kernel_d1_p1" remote="github" revision="master" />
   <project path="device/samsung/smdk4412-common" name="HazyTeam/android_device_samsung_smdk4412-common" remote="github" revision="lolli-sammy" />
   <project path="device/samsung/i9300" name="HazyTeam/android_device_samsung_i9300" remote="github" revision="test2" />
   <project path="kernel/samsung/smdk4412" name="ArchiDroid/android_kernel_samsung_smdk4412" remote="github" revision="cm-12.1" />
