@@ -528,7 +528,7 @@
   <!-- Custom projects -->
 
   <!-- Hazy vendor -->
-  <project path="vendor/hazy" name="HazyTeam/android_vendor_hazy" remote="github" revision="hazypop_test" />
+  <project path="vendor/hazy" name="HazyTeam/android_vendor_hazy" remote="github" revision="hazypop" />
 
   <!-- External -->
   <project path="external/android-visualizer" name="Euphoria-OS/android_external_android-visualizer" remote="github" revision="lollipop-5.1" />
