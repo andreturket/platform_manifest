@@ -9,8 +9,7 @@
            sync-j="4" />
 
   <remote  name="github"
-           fetch="https://github.com"
-	   review="http://eosgerrit.ddns.net" />
+           fetch="https://github.com" />
 
   <project path="build" name="HazyTeam/android_build" groups="pdk,tradefed" remote="github" revision="lolli-legacy" >
     <copyfile src="core/root.mk" dest="Makefile" />
