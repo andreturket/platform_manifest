@@ -541,7 +541,7 @@
   <project path="external/exfat" name="Euphoria-OS-Legacy/android_external_exfat" remote="github" revision="lollipop-5.1" />
   <project path="external/fuse" name="Euphoria-OS-Legacy/android_external_fuse" remote="github" revision="lollipop-5.1" />
   <project path="external/ffmpeg" name="Euphoria-OS-Legacy/android_external_ffmpeg" remote="github" revision="lollipop-5.1" />
-  <project path="external/google" name="Euphoria-OS/android_external_google" remote="github" revision="lollipop-5.1" />
+  <project path="external/google" name="HazyTeam/android_external_google" remote="github" revision="hazypop" />
   <project path="external/libncurses" name="Euphoria-OS-Legacy/android_external_libncurses" remote="github" revision="lollipop-5.1" />
   <project path="external/libphonenumbergoogle" name="Euphoria-OS-Legacy/android_external_libphonenumbergoogle" remote="github" revision="lollipop-5.1" />
   <project path="external/lz4" name="Euphoria-OS-Legacy/android_external_lz4" remote="github" revision="lollipop-5.1" />
