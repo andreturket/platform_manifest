@@ -4,22 +4,23 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
-
   <default revision="refs/tags/android-5.1.1_r12"
            remote="aosp"
            sync-j="4" />
 
   <remote  name="github"
-           fetch="https://github.com" />
+           fetch="https://github.com"
+	   review="http://eosgerrit.ddns.net" />
 
   <project path="build" name="HazyTeam/android_build" groups="pdk,tradefed" remote="github" revision="lolli-legacy" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="Euphoria-OS-Legacy/android_art" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="bionic" name="Euphoria-OS-Legacy/android_bionic" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
-  <project path="bootable/recovery" name="HazyTeam/android_bootable_recovery" groups="pdk" remote="github" revision="cm-12.1" />
+  <project path="bootable/recovery" name="Euphoria-OS-Legacy/android_bootable_recovery" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" />
   <project path="developers/build" name="platform/developers/build" />
@@ -45,21 +46,6 @@
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu" />
   <project path="device/sample" name="device/sample" groups="pdk" />
-
-  <!-- Hazy devices support -->
-  <project path="device/htc/m8" name="HazyTeam/android_device_htc_m8" remote="github" revision="hazypop" />
-  <project path="device/lge/d855" name="HazyTeam/android_device_lge_d855" remote="github" revision="hazypop" />
-  <project path="device/lge/hammerhead" name="HazyTeam/device_lge_hammerhead" remote="github" revision="hazypop" />
-  <project path="device/oneplus/bacon" name="HazyTeam/android_device_oneplus_bacon" remote="github" revision="hazypop" />
-  <project path="device/lge/mako" name="HazyTeam/android_device_lge_mako" remote="github" revision="hazypop" />
-  <project path="device/samsung/manta" name="HazyTeam/device_samsung_manta" remote="github" revision="hazypop" />
-  <project path="device/lge/d802" name="HazyTeam/android_device_lge_d802" remote="github" revision="hazypop" />
-  <project path="device/samsung/p3100" name="HazyTeam/android_device_samsung_p3100" remote="github" revision="hazypop" />
-  <project path="device/samsung/jflte" name="HazyTeam/android_device_samsung_jflte" remote="github" revision="lolli-legacy" />
-  <project path="device/samsung/jf-common" name="HazyTeam/android_device_samsung_jf-common" remote="github" revision="lolli-legacy" />
-  <project path="device/asus/flo" name="HazyTeam/device_asus_flo" remote="github" revision="hazypop" />
-  <project path="device/moto/shamu" name="HazyTeam/android_device_moto_shamu" remote="github" revision="hazypop" />
-
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
@@ -72,17 +58,15 @@
   <project path="external/arduino" name="platform/external/arduino" groups="pdk-cw-fs" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs" />
-  <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" />
+  <project path="external/bluetooth/bluedroid" name="Euphoria-OS-Legacy/android_external_bluetooth_bluedroid" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
-  <project path="external/bson" name="CyanogenMod/android_external_bson" remote="github" revision="cm-12.1" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
-  <project path="external/cardslib" name="CyanogenMod/android_external_cardslib" remote="github" revision="cm-12.1" />
   <project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" groups="pdk" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" />
-  <project path="external/chromium_org" name="platform/external/chromium_org"/>
+  <project path="external/chromium_org" name="platform/external/chromium_org" />
   <project path="external/chromium_org/sdch/open-vcdiff" name="platform/external/chromium_org/sdch/open-vcdiff" />
   <project path="external/chromium_org/testing/gtest" name="platform/external/chromium_org/testing/gtest" />
   <project path="external/chromium_org/third_party/WebKit" name="platform/external/chromium_org/third_party/WebKit" />
@@ -118,29 +102,26 @@
   <project path="external/cmockery" name="platform/external/cmockery" />
   <project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" />
   <project path="external/conscrypt" name="platform/external/conscrypt" groups="pdk-cw-fs" />
-  <project path="external/curl" name="CyanogenMod/android_external_curl" remote="github" revision="cm-12.1" />
   <project path="external/deqp" name="platform/external/deqp" />
   <project path="external/dexmaker" name="platform/external/dexmaker" groups="pdk-cw-fs" />
-  <project path="external/dhcpcd" name="platform/external/dhcpcd" groups="pdk-cw-fs" />
+  <project path="external/dhcpcd" name="Euphoria-OS-Legacy/android_external_dhcpcd" groups="pdk-cw-fs" remote="github" revision="lollipop-5.1" />
   <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk-cw-fs,tradefed" />
-  <project path="external/dropbear" name="CyanogenMod/android_external_dropbear" remote="github" revision="cm-12.1" />
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs" />
-  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" />
+  <project path="external/e2fsprogs" name="Euphoria-OS-Legacy/android_external_e2fsprogs" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,tradefed" />
-  <project path="external/ebtables" name="CyanogenMod/android_external_ebtables" remote="github" revision="cm-12.1" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk-cw-fs" />
   <project path="external/eigen" name="platform/external/eigen" groups="pdk-cw-fs" />
   <project path="external/elfutils" name="platform/external/elfutils" groups="pdk" />
   <project path="external/emma" name="platform/external/emma" groups="pdk-cw-fs,tradefed" />
-  <project path="external/esd" name="platform/external/esd" groups="pdk-cw-fw" />
+  <project path="external/esd" name="platform/external/esd" groups="pdk-cw-fs" />
   <project path="external/expat" name="platform/external/expat" groups="pdk" />
-  <project path="external/eyes-free" name="platform/external/eyes-free" groups="pdk-cw-fw" />
-  <project path="external/f2fs-tools" name="platform/external/f2fs-tools" groups="pdk" />
+  <project path="external/eyes-free" name="platform/external/eyes-free" groups="pdk-cw-fs" />
+  <project path="external/f2fs-tools" name="Euphoria-OS-Legacy/android_external_f2fs-tools" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="external/fdlibm" name="platform/external/fdlibm" groups="pdk" />
   <project path="external/fio" name="platform/external/fio" />
-  <project path="external/flac" name="platform/external/flac" groups="pdk" />
+  <project path="external/flac" name="Euphoria-OS-Legacy/android_external_flac" groups="pdk" remote="github" revision="lollipop-5.1" /> 
   <project path="external/fonttools" name="platform/external/fonttools" />
   <project path="external/freetype" name="platform/external/freetype" groups="pdk" />
   <project path="external/fsck_msdos" name="platform/external/fsck_msdos" groups="pdk-cw-fs" />
@@ -154,21 +135,16 @@
   <project path="external/google-fonts/carrois-gothic-sc" name="platform/external/google-fonts/carrois-gothic-sc" groups="pdk-cw-fs" />
   <project path="external/google-fonts/cutive-mono" name="platform/external/google-fonts/cutive-mono" groups="pdk-cw-fs" />
   <project path="external/google-tv-pairing-protocol" name="platform/external/google-tv-pairing-protocol" />
-  <project path="external/gmock" name="CyanogenMod/android_external_gmock" remote="github" revision="cm-12.1" />
-  <project path="external/gson" name="CyanogenMod/android_external_gson" remote="github" revision="cm-12.1" />
   <project path="external/gtest" name="platform/external/gtest" groups="pdk" />
   <project path="external/guava" name="platform/external/guava" groups="pdk-cw-fs,tradefed" />
   <project path="external/hamcrest" name="platform/external/hamcrest" groups="pdk-cw-fs,tradefed" />
-  <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" />
-  <project path="external/heimdall" name="CyanogenMod/android_external_heimdall" remote="github" revision="cm-12.1" />
-  <project path="external/htop" name="CyanogenMod/android_external_htop" remote="github" revision="cm-12.1" />
-  <project path="external/icu" name="platform/external/icu" groups="pdk" />
+  <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" groups="pdk-cw-fs,qcom_msm8x26" />
+  <project path="external/icu" name="Euphoria-OS-Legacy/android_external_icu" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="external/iproute2" name="platform/external/iproute2" groups="pdk" />
   <project path="external/ipsec-tools" name="platform/external/ipsec-tools" groups="pdk-cw-fs" />
   <project path="external/iptables" name="platform/external/iptables" groups="pdk-cw-fs" />
   <project path="external/iputils" name="platform/external/iputils" groups="pdk-cw-fs" />
   <project path="external/jack" name="platform/external/jack" groups="pdk-cw-fs" />
-  <project path="external/JakeWharton/butterknife" name="CyanogenMod/android_external_JakeWharton_butterknife" remote="github" revision="cm-12.1" />
   <project path="external/jarjar" name="platform/external/jarjar" groups="pdk" />
   <project path="external/javasqlite" name="platform/external/javasqlite" groups="pdk-cw-fs" />
   <project path="external/javassist" name="platform/external/javassist" groups="pdk-cw-fs" />
@@ -177,74 +153,60 @@
   <project path="external/jhead" name="platform/external/jhead" groups="pdk" />
   <project path="external/jline" name="platform/external/jline" groups="notdefault,tradefed" />
   <project path="external/jmdns" name="platform/external/jmdns" groups="pdk-cw-fs" />
-  <project path="external/jpeg" name="platform/external/jpeg" groups="pdk" />
+  <project path="external/jpeg" name="Euphoria-OS-Legacy/android_external_jpeg" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="external/jsilver" name="platform/external/jsilver" groups="pdk-cw-fs,tradefed" />
   <project path="external/jsmn" name="platform/external/jsmn" groups="pdk" />
   <project path="external/jsoncpp" name="platform/external/jsoncpp" groups="pdk-cw-fs" />
   <project path="external/jsr305" name="platform/external/jsr305" groups="pdk-cw-fs,tradefed" />
-  <project path="external/jsr308" name="CyanogenMod/android_external_jsr308" remote="github" revision="cm-12.1" />
-  <project path="external/jsr330" name="CyanogenMod/android_external_jsr330" remote="github" revision="cm-12.1" />
   <project path="external/junit" name="platform/external/junit" groups="pdk-cw-fs,tradefed" />
   <project path="external/ksoap2" name="platform/external/ksoap2" groups="pdk-cw-fs" />
   <project path="external/kernel-headers" name="platform/external/kernel-headers" groups="pdk-cw-fs" />
-  <project path="external/kissfft" name="CyanogenMod/android_external_kissfft" remote="github" revision="cm-12.1" />
-  <project path="external/koush/AndroidAsync" name="CyanogenMod/AndroidAsync" remote="github" revision="cm-12.1" />
-  <project path="external/koush/ion" name="CyanogenMod/ion" remote="github" revision="cm-12.1" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" groups="pdk-cw-fs" />
   <project path="external/libcxx" name="platform/external/libcxx" groups="pdk" />
   <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="pdk" />
   <project path="external/libedit" name="platform/external/libedit" />
-  <project path="external/libexif" name="platform/external/libexif" />
+  <project path="external/libexif" name="platform/external/libexif" groups="pdk-cw-fs" />
   <project path="external/libhevc" name="platform/external/libhevc" />
   <project path="external/libgsm" name="platform/external/libgsm" groups="pdk" />
   <project path="external/liblzf" name="platform/external/liblzf" groups="pdk" />
   <project path="external/libmtp" name="platform/external/libmtp" groups="pdk-cw-fs" />
-  <project path="external/libnfc-nci" name="platform/external/libnfc-nci" groups="pdk" />
-  <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" groups="pdk" />
+  <project path="external/libnfc-nci" name="Euphoria-OS-Legacy/android_external_libnfc-nci" groups="pdk" remote="github" revision="lollipop-5.1" />
+  <project path="external/libnfc-nxp" name="Euphoria-OS-Legacy/android_external_libnfc-nxp" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="external/libnl" name="platform/external/libnl" groups="pdk" />
   <project path="external/libogg" name="platform/external/libogg" groups="pdk" />
   <project path="external/libopus" name="platform/external/libopus" groups="pdk" />
   <project path="external/libpcap" name="platform/external/libpcap" groups="pdk,pdk-cw-fs" />
   <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk-cw-fs" />
-  <project path="external/libpng" name="platform/external/libpng" groups="pdk" />
-  <project path="external/libppp" name="CyanogenMod/android_external_libppp" remote="github" revision="cm-12.1" />
+  <project path="external/libpng" name="Euphoria-OS-Legacy/android_external_libpng" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="external/libseccomp-helper" name="platform/external/libseccomp-helper" groups="pdk-cw-fs" />
-  <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
+  <project path="external/libselinux" name="Euphoria-OS-Legacy/android_external_libselinux" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="external/libsepol" name="platform/external/libsepol" groups="pdk" />
   <project path="external/libssh2" name="platform/external/libssh2" groups="pdk-cw-fs" />
-  <project path="external/libtar" name="CyanogenMod/android_external_libtar" remote="github" revision="cm-12.1" />
   <project path="external/libunwind" name="platform/external/libunwind" groups="pdk" />
   <project path="external/libusb" name="platform/external/libusb" groups="pdk-cw-fs" />
-  <project path="external/libusbx" name="CyanogenMod/android_external_libusbx" remote="github" revision="cm-12.1" />
   <project path="external/libusb-compat" name="platform/external/libusb-compat" groups="pdk-cw-fs" />
   <project path="external/libutf" name="platform/external/libutf" groups="pdk-cw-fs" />
   <project path="external/libvorbis" name="platform/external/libvorbis" groups="pdk-cw-fs" />
-  <project path="external/libvpx" name="platform/external/libvpx" groups="pdk" />
+  <project path="external/libvpx" name="Euphoria-OS-Legacy/android_external_libvpx" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="external/libvterm" name="platform/external/libvterm" groups="pdk-cw-fs" />
-  <project path="external/libxml2" name="platform/external/libxml2" groups="pdk-cw-fs" />
+  <project path="external/libxml2" name="Euphoria-OS-Legacy/android_external_libxml2" groups="pdk-cw-fs" remote="github" revision="lollipop-5.1" />
   <project path="external/libyuv" name="platform/external/libyuv" groups="libyuv,pdk-cw-fs" />
-  <project path="external/libxslt" name="CyanogenMod/android_external_libxslt" remote="github" revision="cm-12.1" />
   <project path="external/linux-tools-perf" name="platform/external/linux-tools-perf" groups="pdk-cw-fs" />
-  <project path="external/libtruezip" name="CyanogenMod/android_external_libtruezip" remote="github" revision="cm-12.1" />
   <project path="external/littlemock" name="platform/external/littlemock" groups="pdk-cw-fs" />
   <project path="external/lldb" name="platform/external/lldb" groups="pdk-cw-fs" />
   <project path="external/llvm" name="platform/external/llvm" groups="pdk" />
   <project path="external/lohit-fonts" name="platform/external/lohit-fonts" />
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs" />
-  <project path="external/lzma" name="platform/external/lzma" />
-  <project path="external/lsof" name="CyanogenMod/android_external_lsof" remote="github" revision="cm-12.1" />
-  <project path="external/lz4" name="CyanogenMod/android_external_lz4" remote="github" revision="cm-12.1" />
-  <project path="external/lzo" name="CyanogenMod/android_external_lzo" remote="github" revision="cm-12.1" />
+  <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk-cw-fs" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
-  <project path="external/mesa3d" name="platform/external/mesa3d" />
+  <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs" />
   <project path="external/messageformat" name="platform/external/messageformat" groups="pdk-cw-fs" />
   <project path="external/mksh" name="platform/external/mksh" groups="pdk" />
   <project path="external/mockito" name="platform/external/mockito" groups="pdk-cw-fs" />
   <project path="external/mockwebserver" name="platform/external/mockwebserver" groups="pdk-cw-fs" />
   <project path="external/mp4parser" name="platform/external/mp4parser" groups="pdk-cw-fs" />
   <project path="external/mtpd" name="platform/external/mtpd" groups="pdk-cw-fs" />
-  <project path="external/nano" name="CyanogenMod/android_external_nano" remote="github" revision="cm-12.1" />
   <project path="external/nanohttpd" name="platform/external/nanohttpd" />
   <project path="external/nanopb-c" name="platform/external/nanopb-c" />
   <project path="external/naver-fonts" name="platform/external/naver-fonts" groups="pdk-cw-fs" />
@@ -254,46 +216,37 @@
   <project path="external/nfacct" name="platform/external/nfacct" groups="pdk-cw-fs" />
   <project path="external/nist-pkits" name="platform/external/nist-pkits" groups="pdk-cw-fs" />
   <project path="external/nist-sip" name="platform/external/nist-sip" groups="pdk-cw-fs" />
-  <project path="external/noto-fonts" name="platform/external/noto-fonts" />
+  <project path="external/noto-fonts" name="platform/external/noto-fonts" groups="pdk" />
   <project path="external/oauth" name="platform/external/oauth" groups="pdk-cw-fs" />
   <project path="external/objenesis" name="platform/external/objenesis" groups="pdk-cw-fs" />
   <project path="external/okhttp" name="platform/external/okhttp" groups="pdk-cw-fs" />
   <project path="external/opencv" name="platform/external/opencv" groups="pdk-cw-fs" />
-  <project path="external/openfst" name="platform/external/openfst" groups="pdk-cw-fs" />
+  <project path="external/openfst" name="platform/external/openfst" groups="pdk-cw-fs"/>
   <project path="external/openssh" name="platform/external/openssh" groups="pdk-cw-fs"/>
-  <project path="external/openssl" name="platform/external/openssl" groups="pdk" />
+  <project path="external/openssl" name="Euphoria-OS-Legacy/android_external_openssl" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="external/oprofile" name="platform/external/oprofile" groups="pdk-cw-fs" />
   <project path="external/owasp/sanitizer" name="platform/external/owasp/sanitizer" />
-  <project path="external/pciutils" name="CyanogenMod/android_external_pciutils" remote="github" revision="cm-12.1" />
-  <project path="external/pcre" name="platform/external/pcre" groups="pdk-cw-fs" />
+  <project path="external/pcre" name="Euphoria-OS-Legacy/android_external_pcre" groups="pdk-cw-fs" remote="github" revision="lollipop-5.1" />
   <project path="external/pdfium" name="platform/external/pdfium" groups="pdk-cw-fs" />
-  <project path="external/pigz" name="CyanogenMod/android_external_pigz" remote="github" revision="cm-12.1" />
-  <project path="external/pixman" name="platform/external/pixman" />
-  <!--<project path="external/powertop" name="CyanogenMod/android_external_powertop" remote="github" revision="cm-12.1" /> -->
+  <project path="external/pixman" name="platform/external/pixman" groups="pdk-cw-fs" />
   <project path="external/ppp" name="platform/external/ppp" groups="pdk-cw-fs" />
   <project path="external/proguard" name="platform/external/proguard" groups="pdk-java,tradefed" />
   <project path="external/protobuf" name="platform/external/protobuf" groups="pdk" />
-  <project path="external/protobuf-c" name="CyanogenMod/android_external_protobuf-c" remote="github" revision="cm-12.1" />
   <project path="external/qemu" name="platform/external/qemu" groups="pdk-cw-fs" />
   <project path="external/qemu-pc-bios" name="platform/external/qemu-pc-bios" groups="pdk-cw-fs" />
-  <project path="external/qrngd" name="CyanogenMod/android_external_qrngd" remote="github" revision="cm-12.1" />
   <project path="external/regex-re2" name="platform/external/regex-re2" groups="pdk-cw-fs" />
   <project path="external/replicaisland" name="platform/external/replicaisland" groups="pdk-cw-fs" />
   <project path="external/robolectric" name="platform/external/robolectric" groups="pdk-cw-fs" />
-  <project path="external/rsync" name="CyanogenMod/android_external_rsync" remote="github" revision="cm-12.1" />
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" />
-  <project path="external/sepolicy" name="mnemonyc/android_external_sepolicy" groups="pdk" remote="github" revision="lolli-sammy" />
+  <project path="external/sepolicy" name="Euphoria-OS-Legacy/android_external_sepolicy" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk-cw-fs,qcom_msm8x26" />
-  <project path="external/skia" name="platform/external/skia" groups="pdk-cw-fs,qcom_msm8x26" />
-  <project path="external/smack" name="platform/external/smack" groups="pdk-cw-fw" />
+  <project path="external/skia" name="Euphoria-OS-Legacy/android_external_skia" groups="pdk-cw-fs,qcom_msm8x26" remote="github" revision="lollipop-5.1" />
+  <project path="external/smack" name="platform/external/smack" groups="pdk-cw-fs" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
   <project path="external/speex" name="platform/external/speex" groups="pdk" />
-  <project path="external/spongycastle" name="CyanogenMod/android_external_spongycastle" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
-  <project path="external/square/dagger" name="CyanogenMod/android_external_square_dagger" remote="github" revision="cm-12.1" />
-  <project path="external/square/javawriter" name="CyanogenMod/android_external_square_javawriter" remote="github" revision="cm-12.1" />
   <project path="external/srec" name="platform/external/srec" groups="pdk-cw-fs" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs" />
   <project path="external/stlport" name="platform/external/stlport" groups="pdk" />
@@ -303,29 +256,24 @@
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk-cw-fs,tradefed" />
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk,pdk-cw-fs" />
   <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" groups="pdk-cw-fs" />
-  <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" />
-  <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
+  <project path="external/tinyalsa" name="Euphoria-OS-Legacy/android_external_tinyalsa" groups="pdk" remote="github" revision="lollipop-5.1" />
+  <project path="external/tinycompress" name="Euphoria-OS-Legacy/android_external_tinycompress" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
   <project path="external/tremolo" name="platform/external/tremolo" groups="pdk" />
-  <project path="external/unrar" name="CyanogenMod/android_external_unrar" remote="github" revision="cm-12.1" />
   <project path="external/valgrind" name="platform/external/valgrind" groups="pdk" />
   <project path="external/vixl" name="platform/external/vixl" groups="pdk" />
-  <project path="external/vim" name="CyanogenMod/android_external_vim" remote="github" revision="cm-12.1" />
   <project path="external/webp" name="platform/external/webp" groups="pdk-cw-fs,qcom_msm8x26" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
-  <project path="external/whispersystems/TextSecure" name="CyanogenMod/android_external_whispersystems_TextSecure" remote="github" revision="cm-12.1" />
-  <project path="external/whispersystems/WhisperPush" name="CyanogenMod/android_external_whispersystems_WhisperPush" remote="github" revision="cm-12.1" />
-  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" />
+  <project path="external/wpa_supplicant_8" name="Euphoria-OS-Legacy/android_external_wpa_supplicant_8" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk-cw-fs" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk-cw-fs" />
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
-  <project path="external/zip" name="CyanogenMod/android_external_zip" remote="github" revision="cm-12.1" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
-  <project path="frameworks/av" name="mnemonyc/android_frameworks_av" groups="pdk" remote="github" revision="cm-12.1" />
-  <project path="frameworks/base" name="HazyTeam/platform_frameworks_base" groups="pdk-cw-fs" remote="github" revision="lolli_test-5.1" />
+  <project path="frameworks/av" name="Euphoria-OS-Legacy/android_frameworks_av" groups="pdk" remote="github" revision="lollipop-5.1" />
+  <project path="frameworks/base" name="HazyTeam/android_frameworks_base" groups="pdk-cw-fs" remote="github" revision="lolli_test-5.1" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -334,7 +282,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />
-  <project path="frameworks/native" name="HazyTeam/android_frameworks_native" groups="pdk" remote="github" revision="lolli-legacy" />
+  <project path="frameworks/native" name="Euphoria-OS-Legacy/android_frameworks_native" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
   <project path="frameworks/opt/bluetooth" name="Euphoria-OS-Legacy/android_frameworks_opt_bluetooth" groups="pdk-cw-fs" remote="github" revision="lollipop-5.1" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" />
@@ -416,7 +364,7 @@
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="Euphoria-OS-Legacy/android_packages_apps_Bluetooth" groups="pdk-cw-fs" remote="github" revision="lollipop-5.1" />
-  <project path="packages/apps/Browser" name="HazyTeam/platform_packages_apps_browser" remote="github" revision="hazypop" />
+  <project path="packages/apps/Browser" name="Euphoria-OS/android_packages_apps_Browser" remote="github" revision="lollipop-5.1" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
   <project path="packages/apps/Calendar" name="Euphoria-OS/android_packages_apps_Calendar" remote="github" revision="lollipop-5.1" />
   <project path="packages/apps/Camera" name="platform/packages/apps/Camera" />
@@ -436,7 +384,7 @@
   <project path="packages/apps/InCallUI" name="Euphoria-OS-Legacy/android_packages_apps_InCallUI" remote="github" revision="lollipop-5.1" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
   <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
-  <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" />
+  <project path="packages/apps/Launcher3" name="Euphoria-OS/android_packages_apps_Launcher3" remote="github" revision="lollipop-5.1" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" />
   <project path="packages/apps/Mms" name="Euphoria-OS-Legacy/android_packages_apps_Mms" remote="github" revision="lollipop-5.1" />
@@ -445,11 +393,12 @@
   <project path="packages/apps/Nfc" name="Euphoria-OS-Legacy/android_packages_apps_Nfc" remote="github" revision="lollipop-5.1" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" />
   <project path="packages/apps/PackageInstaller" name="Euphoria-OS/android_packages_apps_PackageInstaller" remote="github" revision="lollipop-5.1" />
+  <project path="packages/apps/Phone" name="platform/packages/apps/Phone" />
   <project path="packages/apps/PhoneCommon" name="Euphoria-OS-Legacy/android_packages_apps_PhoneCommon" remote="github" revision="lollipop-5.1" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="HazyTeam/platform_packages_apps_settings" remote="github" revision="lolli-sammy" />
+  <project path="packages/apps/Settings" name="HazyTeam/android_packages_apps_Settings" remote="github" revision="lolli-sammy" />
   <project path="packages/apps/SmartCardService" name="Euphoria-OS-Legacy/android_packages_apps_SmartCardService" remote="github" revision="lollipop-5.1" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -546,7 +495,7 @@
   <project path="system/media" name="Euphoria-OS-Legacy/android_system_media" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="system/netd" name="Euphoria-OS-Legacy/android_system_netd" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/vold" name="CyanogenMod/android_system_vold" groups="pdk" remote="github" revision="cm-12.1" />
+  <project path="system/vold" name="Euphoria-OS-Legacy/android_system_vold" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
@@ -561,12 +510,11 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-  <project path="vendor/cmsdk" name="CyanogenMod/cm_platform_sdk" remote="github" revision="cm-12.1"/>
 
   <!-- Custom projects -->
 
   <!-- Hazy vendor -->
-  <project path="vendor/hazy" name="HazyTeam/android_vendor_hazy" remote="github" revision="hazypop" />
+  <project path="vendor/hazy" name="Euphoria-OS-Legacy/android_vendor_hazy" remote="github" revision="hazypop" />
 
   <!-- External -->
   <project path="external/android-visualizer" name="Euphoria-OS/android_external_android-visualizer" remote="github" revision="lollipop-5.1" />
@@ -582,6 +530,7 @@
   <project path="external/google" name="Euphoria-OS/android_external_google" remote="github" revision="lollipop-5.1" />
   <project path="external/libncurses" name="Euphoria-OS-Legacy/android_external_libncurses" remote="github" revision="lollipop-5.1" />
   <project path="external/libphonenumbergoogle" name="Euphoria-OS-Legacy/android_external_libphonenumbergoogle" remote="github" revision="lollipop-5.1" />
+  <project path="external/lz4" name="Euphoria-OS-Legacy/android_external_lz4" remote="github" revision="lollipop-5.1" />
   <project path="external/ntfs-3g" name="Euphoria-OS-Legacy/android_external_ntfs-3g" remote="github" revision="lollipop-5.1" />
   <project path="external/stagefright-plugins" name="Euphoria-OS-Legacy/android_external_stagefright-plugins" remote="github" revision="lollipop-5.1" />
 
@@ -592,6 +541,10 @@
   <project path="frameworks/opt/hardware" name="Euphoria-OS-Legacy/android_frameworks_opt_hardware" remote="github" revision="lollipop-5.1" />
   <project path="hardware/cm" name="Euphoria-OS-Legacy/android_hardware_cm" remote="github" revision="lollipop-5.1" />
 
+  <!-- CM SDK -->
+  <project path="vendor/cmsdk" name="Euphoria-OS-Legacy/cm_platform_sdk" remote="github" revision="lollipop-5.1" />
+  <project path="prebuilts/cmsdk" name="Euphoria-OS-Legacy/android_prebuilts_cmsdk" remote="github" revision="lollipop-5.1" />
+
   <!-- Qcom softap -->
   <project path="system/qcom" name="Euphoria-OS-Legacy/android_system_qcom" remote="github" revision="lollipop-5.1" />
 
@@ -601,8 +554,12 @@
   <!-- Apps -->
   <project path="packages/apps/AudioFX" name="Euphoria-OS/android_packages_apps_AudioFX" remote="github" revision="lollipop-5.1" />
   <project path="packages/apps/BluetoothExt" name="Euphoria-OS-Legacy/android_packages_apps_BluetoothExt" remote="github" revision="lollipop-5.1" />
-  <project path="packages/apps/CustomWallpapers" name="Euphoria-OS/android_packages_apps_CustomWallpapers" remote="github" revision="lollipop-5.1" />
   <project path="packages/apps/Eleven" name="Euphoria-OS/android_packages_apps_Eleven" remote="github" revision="lollipop-5.1" />
   <project path="packages/apps/LockClock" name="Euphoria-OS/android_packages_apps_LockClock" remote="github" revision="lollipop-5.1" />
+  <project path="packages/apps/Profiles" name="Euphoria-OS/android_packages_apps_Profiles" remote="github" revision="lollipop-5.1" />
+  <project path="packages/apps/ScreenRecorder" name="Euphoria-OS/android_packages_apps_ScreenRecorder" remote="github" revision="lollipop-5.1" />
+  
+  <!-- Cards -->
+  <project path="frameworks/opt/cards" name="Euphoria-OS/android_frameworks_opt_cards" remote="github" revision="lollipop-5.1" />
 
 </manifest>
