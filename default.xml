@@ -4,17 +4,12 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
-
-  <remote  name="github"
-           fetch=".." />
-
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
-
   <default revision="refs/tags/android-5.1.1_r13"
            remote="aosp"
-           sync-c="true"
            sync-j="4" />
+
+  <remote  name="github"
+           fetch="https://github.com" />
 
   <project path="manifest" name="HazyTeam/platform_manifest" remote="github" revision="lolli-legacy" />
 
@@ -26,7 +21,7 @@
   <project path="art" name="CyanogenMod/android_art" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="bionic" name="CyanogenMod/android_bionic" remote="github"  revision="cm-12.1" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
-  <project path="bootable/recovery" name="HazyTeam/android_bootable_recovery" groups="pdk" remote="github" revision="cm-12.1" />
+  <project path="bootable/recovery" name="HazyTeam/android_bootable_recovery" groups="pdk" remote="github" revision="lolli-legacy" />
   <project path="cts" name="CyanogenMod/android_cts" groups="cts,pdk-cw-fs" remote="github" revision="cm-12.1" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" />
   <project path="developers/build" name="platform/developers/build" />
@@ -576,14 +571,14 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
-  <project path="system/core" name="CyanogenMod/android_system_core" groups="pdk" remote="github" revision="cm-12.1" />
+  <project path="system/core" name="HazyTeam/android_system_core" groups="pdk" remote="github" revision="hazypop" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="system/keymaster" name="CyanogenMod/android_system_keymaster" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="system/netd" name="CyanogenMod/android_system_netd" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" remote="github" revision="cm-12.1" />
   <project path="system/security" name="CyanogenMod/android_system_security" groups="pdk" remote="github" revision="cm-12.1" />
-  <project path="system/vold" name="CyanogenMod/android_system_vold" groups="pdk" remote="github" revision="cm-12.1" />
+  <project path="system/vold" name="HazyTeam/android_system_vold" groups="pdk" remote="github" revision="hazypop" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
