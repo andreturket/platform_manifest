@@ -35,12 +35,12 @@
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="DirtyUnicorns/android_development" groups="pdk-cw-fs" remote="github" revision="lollipop" />
-  <project path="device/common" name="platform/device/common" groups="pdk-cw-fs" />
-  <project path="device/generic/arm64" name="platform/device/generic/arm64" groups="pdk" />
-  <project path="device/generic/armv7-a-neon" name="platform/device/generic/armv7-a-neon" groups="pdk" />
-  <project path="device/generic/common" name="platform/device/generic/common" groups="pdk" />
-  <project path="device/generic/goldfish" name="platform/device/generic/goldfish" groups="pdk" />
-  <project path="device/generic/mips" name="platform/device/generic/mips" groups="pdk" />
+  <project path="device/common" name="device/common" groups="pdk-cw-fs" />
+  <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
+  <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
+  <project path="device/generic/common" name="device/generic/common" groups="pdk" />
+  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
+  <project path="device/generic/mips" name="device/generic/mips" groups="pdk" />
   <project path="device/generic/mini-emulator-arm64" name="DirtyUnicorns/android_device_generic_mini-emulator-arm64" groups="pdk" remote="github" revision="lollipop" />
   <project path="device/generic/mini-emulator-armv7-a-neon" name="DirtyUnicorns/android_device_generic_mini-emulator-armv7-a-neon" groups="pdk" remote="github" revision="lollipop" />
   <project path="device/generic/mini-emulator-mips" name="DirtyUnicorns/android_device_generic_mini-emulator-mips" groups="pdk" remote="github" revision="lollipop" />
