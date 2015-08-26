@@ -397,7 +397,7 @@
   <project path="hardware/libhardware" name="ArchiDroid/android_hardware_libhardware" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="hardware/libhardware_legacy" name="DirtyUnicorns/android_hardware_libhardware_legacy" remote="github" revision="lollipop" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
-  <project path="hardware/nvidia/tegra124" name="platform/hardware/tegra124" groups="tegra124" />
+  <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
   <project path="hardware/qcom/audio" name="DirtyUnicorns/android_hardware_qcom_audio" remote="github" revision="lollipop" />
   <project path="hardware/qcom/audio-caf/apq8084" name="DirtyUnicorns/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="lollipop-caf-8084" remote="github" />
   <project path="hardware/qcom/audio-caf/msm8226" name="DirtyUnicorns/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="lollipop-caf-8226" remote="github" />
