@@ -428,11 +428,9 @@
   <project path="hardware/ril-caf" name="CyanogenMod/android_hardware_ril" groups="pdk" revision="cm-12.1-caf" remote="github" />
   <project path="hardware/samsung" name="ArchiDroid/android_hardware_samsung" remote="github" revision="cm-12.1" />
   <project path="hardware/samsung_slsi/exynos5" name="DirtyUnicorns/android_hardware_samsung_slsi_exynos5" remote="github" revision="lollipop-caf" />
-  <project path="hardware/ti/omap3" name="DirtyUnicorns/android_hardware_ti_omap3" remote="github" revision="lollipop-caf" />
-  <project path="hardware/ti/omap4" name="CyanogenMod/android_hardware_ti_omap4" remote="github" revision="cm-12.1" />
-  <project path="hardware/ti/omap4xxx" name="DirtyUnicorns/android_hardware_ti_omap4xxx" remote="github" revision="lollipop-caf" />
-  <project path="hardware/ti/wlan" name="DirtyUnicorns/android_hardware_ti_wlan" remote="github" revision="lollipop-caf" />
-  <project path="hardware/ti/wpan" name="DirtyUnicorns/android_hardware_ti_wpan" remote="github" revision="lollipop-caf" />
+  <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
+  <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
+  <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4xxx" />
   <project path="libcore" name="DirtyUnicorns/android_libcore" groups="pdk" remote="github" revision="lollipop-caf" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
