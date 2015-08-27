@@ -11,7 +11,7 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
-  <default revision="refs/tags/android-5.1.1_r9"
+  <default revision="refs/tags/android-5.1.1_r13"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
@@ -23,29 +23,29 @@
   </project>
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="DirtyUnicorns/android_art" remote="github" revision="lollipop" />
-  <project path="bionic" name="DirtyUnicorns/android_bionic" remote="github" revision="lollipop" />
+  <project path="art" name="DirtyUnicorns/android_art" remote="github" revision="lollipop-caf" />
+  <project path="bionic" name="DirtyUnicorns/android_bionic" remote="github" revision="lollipop-caf" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
   <project path="bootable/recovery" name="omnirom/android_bootable_recovery" groups="pdk" remote="github" revision="android-5.1" />
-  <project path="crowdin" name="DirtyUnicorns/crowdin" remote="github" revision="lollipop" />
+  <project path="crowdin" name="DirtyUnicorns/crowdin" remote="github" revision="lollipop-caf" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" />
   <project path="developers/build" name="platform/developers/build" />
   <project path="developers/demos" name="platform/developers/demos" />
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
-  <project path="development" name="DirtyUnicorns/android_development" groups="pdk-cw-fs" remote="github" revision="lollipop" />
+  <project path="development" name="DirtyUnicorns/android_development" groups="pdk-cw-fs" remote="github" revision="lollipop-caf" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
   <project path="device/generic/mips" name="device/generic/mips" groups="pdk" />
-  <project path="device/generic/mini-emulator-arm64" name="DirtyUnicorns/android_device_generic_mini-emulator-arm64" groups="pdk" remote="github" revision="lollipop" />
-  <project path="device/generic/mini-emulator-armv7-a-neon" name="DirtyUnicorns/android_device_generic_mini-emulator-armv7-a-neon" groups="pdk" remote="github" revision="lollipop" />
-  <project path="device/generic/mini-emulator-mips" name="DirtyUnicorns/android_device_generic_mini-emulator-mips" groups="pdk" remote="github" revision="lollipop" />
-  <project path="device/generic/mini-emulator-x86" name="DirtyUnicorns/android_device_generic_mini-emulator-x86" groups="pdk" remote="github" revision="lollipop" />
-  <project path="device/generic/mini-emulator-x86_64" name="DirtyUnicorns/android_device_generic_mini-emulator-x86_64" groups="pdk" remote="github" revision="lollipop" />
+  <project path="device/generic/mini-emulator-arm64" name="DirtyUnicorns/android_device_generic_mini-emulator-arm64" groups="pdk" remote="github" revision="lollipop-caf" />
+  <project path="device/generic/mini-emulator-armv7-a-neon" name="DirtyUnicorns/android_device_generic_mini-emulator-armv7-a-neon" groups="pdk" remote="github" revision="lollipop-caf" />
+  <project path="device/generic/mini-emulator-mips" name="DirtyUnicorns/android_device_generic_mini-emulator-mips" groups="pdk" remote="github" revision="lollipop-caf" />
+  <project path="device/generic/mini-emulator-x86" name="DirtyUnicorns/android_device_generic_mini-emulator-x86" groups="pdk" remote="github" revision="lollipop-caf" />
+  <project path="device/generic/mini-emulator-x86_64" name="DirtyUnicorns/android_device_generic_mini-emulator-x86_64" groups="pdk" remote="github" revision="lollipop-caf" />
   <project path="device/generic/qemu" name="device/generic/qemu" />
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
@@ -59,7 +59,7 @@
   <project path="vendor/samsung" name="ArchiDroid/proprietary_vendor_samsung" remote="github" revision="cm-12.1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
-  <project path="external/aac" name="DirtyUnicorns/android_external_aac" remote="github" revision="lollipop" />
+  <project path="external/aac" name="DirtyUnicorns/android_external_aac" remote="github" revision="lollipop-caf" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
   <project path="external/android-mock" name="CyanogenMod/android_external_android-mock" remote="github" revision="cm-12.1" />
   <project path="external/android-visualizer" name="DirtyUnicorns/android_external_android-visualizer" remote="github" revision="lollipop-caf" />
@@ -80,7 +80,7 @@
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
   <project path="external/bson" name="CyanogenMod/android_external_bson" remote="github" revision="cm-12.1" />
-  <project path="external/busybox" name="DirtyUnicorns/android_external_busybox" remote="github" revision="lollipop" />
+  <project path="external/busybox" name="DirtyUnicorns/android_external_busybox" remote="github" revision="lollipop-caf" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <project path="external/cardslib" name="CyanogenMod/android_external_cardslib" remote="github" revision="cm-12.1" />
   <project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs" />
@@ -144,9 +144,9 @@
   <project path="external/exfat" name="DirtyUnicorns/android_external_exfat" remote="github" revision="lollipop-caf" />
   <project path="external/expat" name="platform/external/expat" groups="pdk" />
   <project path="external/eyes-free" name="platform/external/eyes-free" groups="pdk-cw-fw" />
-  <project path="external/f2fs-tools" name="DirtyUnicorns/android_external_f2fs-tools" groups="pdk" remote="github" revision="lollipop" />
+  <project path="external/f2fs-tools" name="DirtyUnicorns/android_external_f2fs-tools" groups="pdk" remote="github" revision="lollipop-caf" />
   <project path="external/fdlibm" name="platform/external/fdlibm" groups="pdk" />
-  <project path="external/ffmpeg" name="DirtyUnicorns/android_external_ffmpeg" remote="github" revision="lollipop" />
+  <project path="external/ffmpeg" name="DirtyUnicorns/android_external_ffmpeg" remote="github" revision="lollipop-caf" />
   <project path="external/fio" name="platform/external/fio" />
   <project path="external/flac" name="platform/external/flac" groups="pdk" />
   <project path="external/fonttools" name="platform/external/fonttools" />
@@ -172,7 +172,7 @@
   <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" />
   <project path="external/heimdall" name="CyanogenMod/android_external_heimdall" remote="github" revision="cm-12.1" />
   <project path="external/htop" name="CyanogenMod/android_external_htop" remote="github" revision="cm-12.1" />
-  <project path="external/icu" name="DirtyUnicorns/android_external_icu" groups="pdk" remote="github" revision="lollipop" />
+  <project path="external/icu" name="DirtyUnicorns/android_external_icu" groups="pdk" remote="github" revision="lollipop-caf" />
   <project path="external/iproute2" name="platform/external/iproute2" groups="pdk" />
   <project path="external/ipsec-tools" name="platform/external/ipsec-tools" groups="pdk-cw-fs" />
   <project path="external/iptables" name="platform/external/iptables" groups="pdk-cw-fs" />
@@ -187,7 +187,7 @@
   <project path="external/jhead" name="platform/external/jhead" groups="pdk" />
   <project path="external/jline" name="platform/external/jline" groups="notdefault,tradefed" />
   <project path="external/jmdns" name="platform/external/jmdns" groups="pdk-cw-fs" />
-  <project path="external/jpeg" name="DirtyUnicorns/android_external_jpeg" groups="pdk" remote="github" revision="lollipop" />
+  <project path="external/jpeg" name="DirtyUnicorns/android_external_jpeg" groups="pdk" remote="github" revision="lollipop-caf" />
   <project path="external/jsilver" name="platform/external/jsilver" groups="pdk-cw-fs,tradefed" />
   <project path="external/jsmn" name="platform/external/jsmn" groups="pdk" />
   <project path="external/jsoncpp" name="platform/external/jsoncpp" groups="pdk-cw-fs" />
@@ -222,7 +222,7 @@
   <project path="external/libppp" name="CyanogenMod/android_external_libppp" remote="github" revision="cm-12.1" />
   <project path="external/libseccomp-helper" name="platform/external/libseccomp-helper" groups="pdk-cw-fs" />
   <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
-  <project path="external/libsepol" name="DirtyUnicorns/android_external_libsepol" groups="pdk" remote="github" revision="lollipop" />
+  <project path="external/libsepol" name="DirtyUnicorns/android_external_libsepol" groups="pdk" remote="github" revision="lollipop-caf" />
   <project path="external/libssh2" name="platform/external/libssh2" />
   <project path="external/libtar" name="CyanogenMod/android_external_libtar" remote="github" revision="cm-12.1" />
   <project path="external/libunwind" name="platform/external/libunwind" groups="pdk" />
@@ -233,7 +233,7 @@
   <project path="external/libvorbis" name="platform/external/libvorbis" groups="pdk-cw-fs" />
   <project path="external/libvpx" name="platform/external/libvpx" groups="pdk" />
   <project path="external/libvterm" name="platform/external/libvterm" />
-  <project path="external/libxml2" name="DirtyUnicorns/android_external_libxml2" groups="pdk-cw-fs" remote="github" revision="lollipop" />
+  <project path="external/libxml2" name="DirtyUnicorns/android_external_libxml2" groups="pdk-cw-fs" remote="github" revision="lollipop-caf" />
   <project path="external/libxslt" name="CyanogenMod/android_external_libxslt" remote="github" revision="cm-12.1" />
   <project path="external/libyuv" name="platform/external/libyuv" groups="libyuv,pdk-cw-fs" />
   <project path="external/linux-tools-perf" name="platform/external/linux-tools-perf" groups="pdk-cw-fs" />
@@ -288,16 +288,16 @@
   <project path="external/protobuf-c" name="CyanogenMod/android_external_protobuf-c" remote="github" revision="cm-12.1" />
   <project path="external/qemu" name="platform/external/qemu" groups="pdk-cw-fs" />
   <project path="external/qemu-pc-bios" name="platform/external/qemu-pc-bios" groups="pdk-cw-fs" />
-  <project path="external/qrngd" name="DirtyUnicorns/android_external_qrngd" remote="github" revision="lollipop" />
+  <project path="external/qrngd" name="DirtyUnicorns/android_external_qrngd" remote="github" revision="lollipop-caf" />
   <project path="external/regex-re2" name="platform/external/regex-re2" groups="pdk-cw-fs" />
   <project path="external/replicaisland" name="platform/external/replicaisland" groups="pdk-cw-fs" />
   <project path="external/robolectric" name="platform/external/robolectric" groups="pdk-cw-fs" />
   <project path="external/rsync" name="CyanogenMod/android_external_rsync" remote="github" revision="cm-12.1" />
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" />
-  <project path="external/sepolicy" name="DirtyUnicorns/android_external_sepolicy" remote="github" revision="lollipop" />
+  <project path="external/sepolicy" name="DirtyUnicorns/android_external_sepolicy" remote="github" revision="lollipop-caf" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk-cw-fs,qcom_msm8x26" />
-  <project path="external/skia" name="DirtyUnicorns/android_external_skia" remote="github" revision="lollipop" />
+  <project path="external/skia" name="DirtyUnicorns/android_external_skia" remote="github" revision="lollipop-caf" />
   <project path="external/smack" name="platform/external/smack" groups="pdk-cw-fw" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
@@ -308,7 +308,7 @@
   <project path="external/square/javawriter" name="CyanogenMod/android_external_square_javawriter" remote="github" revision="cm-12.1" />
   <project path="external/srec" name="platform/external/srec" groups="pdk-cw-fs" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs" />
-  <project path="external/stagefright-plugins" name="DirtyUnicorns/android_external_stagefright-plugins" remote="github" revision="lollipop" />
+  <project path="external/stagefright-plugins" name="DirtyUnicorns/android_external_stagefright-plugins" remote="github" revision="lollipop-caf" />
   <project path="external/stlport" name="platform/external/stlport" groups="pdk" />
   <project path="external/strace" name="platform/external/strace" groups="pdk-cw-fs" />
   <project path="external/stressapptest" name="platform/external/stressapptest" groups="pdk-cw-fs" />
@@ -316,7 +316,7 @@
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk-cw-fs,tradefed" />
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk,pdk-cw-fs" />
   <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" />
-  <project path="external/tinyalsa" name="DirtyUnicorns/android_external_tinyalsa" groups="pdk" remote="github" revision="lollipop" />
+  <project path="external/tinyalsa" name="DirtyUnicorns/android_external_tinyalsa" groups="pdk" remote="github" revision="lollipop-caf" />
   <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
@@ -329,7 +329,7 @@
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
   <project path="external/whispersystems/TextSecure" name="CyanogenMod/android_external_whispersystems_TextSecure" remote="github" revision="cm-12.1" />
   <project path="external/whispersystems/WhisperPush" name="CyanogenMod/android_external_whispersystems_WhisperPush" remote="github" revision="cm-12.1" />
-  <project path="external/wpa_supplicant_8" name="DirtyUnicorns/android_external_wpa_supplicant_8" groups="pdk" remote="github" revision="lollipop" />
+  <project path="external/wpa_supplicant_8" name="DirtyUnicorns/android_external_wpa_supplicant_8" groups="pdk" remote="github" revision="lollipop-caf" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk-cw-fs" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk-cw-fs" />
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
@@ -351,33 +351,33 @@
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/cards" name="DirtyUnicorns/android_frameworks_opt_cards" remote="github" revision="lollipop" />
+  <project path="frameworks/opt/cards" name="DirtyUnicorns/android_frameworks_opt_cards" remote="github" revision="lollipop-caf" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" groups="pdk-cw-fs" />
   <project path="frameworks/opt/chips" name="platform/frameworks/opt/chips" groups="pdk-cw-fs" />
   <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/datetimepicker" name="DirtyUnicorns/android_frameworks_opt_datetimepicker" remote="github" revision="lollipop" />
+  <project path="frameworks/opt/datetimepicker" name="DirtyUnicorns/android_frameworks_opt_datetimepicker" remote="github" revision="lollipop-caf" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" groups="pdk-cw-fs" />
   <project path="frameworks/opt/hardware" name="CyanogenMod/android_frameworks_opt_hardware" remote="github" revision="cm-12.1" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs" />
   <project path="frameworks/opt/mms" name="platform/frameworks/opt/mms" groups="pdk-cw-fs" />
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/net/ims" name="DirtyUnicorns/android_frameworks_opt_net_ims" remote="github" revision="lollipop" />
+  <project path="frameworks/opt/net/ims" name="DirtyUnicorns/android_frameworks_opt_net_ims" remote="github" revision="lollipop-caf" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/net/wifi" name="DirtyUnicorns/android_frameworks_opt_net_wifi" remote="github" revision="lollipop" />
+  <project path="frameworks/opt/net/wifi" name="DirtyUnicorns/android_frameworks_opt_net_wifi" remote="github" revision="lollipop-caf" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/telephony" name="DirtyUnicorns/android_frameworks_opt_telephony" remote="github" revision="lollipop" />
-  <project path="frameworks/opt/timezonepicker" name="DirtyUnicorns/android_frameworks_opt_timezonepicker" remote="github" revision="lollipop" />
+  <project path="frameworks/opt/telephony" name="DirtyUnicorns/android_frameworks_opt_telephony" remote="github" revision="lollipop-caf" />
+  <project path="frameworks/opt/timezonepicker" name="DirtyUnicorns/android_frameworks_opt_timezonepicker" remote="github" revision="lollipop-caf" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
   <project path="frameworks/support" name="platform/frameworks/support" groups="pdk-cw-fs" />
   <project path="frameworks/volley" name="platform/frameworks/volley" groups="pdk-cw-fs" />
-  <project path="frameworks/webview" name="DirtyUnicorns/android_frameworks_webview" remote="github" revision="lollipop" />
+  <project path="frameworks/webview" name="DirtyUnicorns/android_frameworks_webview" remote="github" revision="lollipop-caf" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" groups="pdk" />
-  <project path="hardware/broadcom/libbt" name="DirtyUnicorns/android_hardware_broadcom_libbt" remote="github" revision="lollipop" />
-  <project path="hardware/broadcom/wlan" name="DirtyUnicorns/android_hardware_broadcom_wlan" remote="github" revision="lollipop" />
+  <project path="hardware/broadcom/libbt" name="DirtyUnicorns/android_hardware_broadcom_libbt" remote="github" revision="lollipop-caf" />
+  <project path="hardware/broadcom/wlan" name="DirtyUnicorns/android_hardware_broadcom_wlan" remote="github" revision="lollipop-caf" />
   <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" remote="github" revision="cm-12.1" />
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
   <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" />
@@ -395,25 +395,25 @@
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="ArchiDroid/android_hardware_libhardware" groups="pdk" remote="github" revision="cm-12.1" />
-  <project path="hardware/libhardware_legacy" name="DirtyUnicorns/android_hardware_libhardware_legacy" remote="github" revision="lollipop" />
+  <project path="hardware/libhardware_legacy" name="DirtyUnicorns/android_hardware_libhardware_legacy" remote="github" revision="lollipop-caf" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
-  <project path="hardware/qcom/audio" name="DirtyUnicorns/android_hardware_qcom_audio" remote="github" revision="lollipop" />
+  <project path="hardware/qcom/audio" name="DirtyUnicorns/android_hardware_qcom_audio" remote="github" revision="lollipop-caf" />
   <project path="hardware/qcom/audio-caf/apq8084" name="DirtyUnicorns/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="lollipop-caf-8084" remote="github" />
   <project path="hardware/qcom/audio-caf/msm8226" name="DirtyUnicorns/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="lollipop-caf-8226" remote="github" />
   <project path="hardware/qcom/audio-caf/msm8960" name="DirtyUnicorns/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="lollipop-caf-8960" remote="github" />
   <project path="hardware/qcom/audio-caf/msm8974" name="DirtyUnicorns/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="lollipop-caf-8974" remote="github" />
-  <project path="hardware/qcom/bt" name="DirtyUnicorns/android_hardware_qcom_bt" remote="github" revision="lollipop" />
-  <project path="hardware/qcom/camera" name="DirtyUnicorns/android_hardware_qcom_camera" remote="github" revision="lollipop" />
-  <project path="hardware/qcom/display" name="DirtyUnicorns/android_hardware_qcom_display" remote="github" revision="lollipop" />
+  <project path="hardware/qcom/bt" name="DirtyUnicorns/android_hardware_qcom_bt" remote="github" revision="lollipop-caf" />
+  <project path="hardware/qcom/camera" name="DirtyUnicorns/android_hardware_qcom_camera" remote="github" revision="lollipop-caf" />
+  <project path="hardware/qcom/display" name="DirtyUnicorns/android_hardware_qcom_display" remote="github" revision="lollipop-caf" />
   <project path="hardware/qcom/display-caf/apq8084" name="DirtyUnicorns/android_hardware_qcom_display" groups="qcom,qcom_display" revision="lollipop-caf-8084" remote="github" />
   <project path="hardware/qcom/display-caf/msm8226" name="DirtyUnicorns/android_hardware_qcom_display" groups="qcom,qcom_display" revision="lollipop-caf-8226" remote="github" />
   <project path="hardware/qcom/display-caf/msm8960" name="DirtyUnicorns/android_hardware_qcom_display" groups="qcom,qcom_display" revision="lollipop-caf-8960" remote="github" />
   <project path="hardware/qcom/display-caf/msm8974" name="DirtyUnicorns/android_hardware_qcom_display" groups="qcom,qcom_display" revision="lollipop-caf-8974" remote="github" />
   <project path="hardware/qcom/fm" name="CyanogenMod/android_hardware_qcom_fm" revision="cm-12.1" remote="github" />
-  <project path="hardware/qcom/gps" name="DirtyUnicorns/android_hardware_qcom_gps" remote="github" revision="lollipop" />
-  <project path="hardware/qcom/keymaster" name="DirtyUnicorns/android_hardware_qcom_keymaster" remote="github" revision="lollipop" />
-  <project path="hardware/qcom/media" name="DirtyUnicorns/android_hardware_qcom_media" remote="github" revision="lollipop" />
+  <project path="hardware/qcom/gps" name="DirtyUnicorns/android_hardware_qcom_gps" remote="github" revision="lollipop-caf" />
+  <project path="hardware/qcom/keymaster" name="DirtyUnicorns/android_hardware_qcom_keymaster" remote="github" revision="lollipop-caf" />
+  <project path="hardware/qcom/media" name="DirtyUnicorns/android_hardware_qcom_media" remote="github" revision="lollipop-caf" />
   <project path="hardware/qcom/media-caf/apq8084" name="DirtyUnicorns/android_hardware_qcom_media" groups="qcom" remote="github" revision="lollipop-caf-8226" />
   <project path="hardware/qcom/media-caf/msm8226" name="DirtyUnicorns/android_hardware_qcom_media" groups="qcom" remote="github" revision="lollipop-caf-8226" />
   <project path="hardware/qcom/media-caf/msm8960" name="DirtyUnicorns/android_hardware_qcom_media" groups="qcom" remote="github" revision="lollipop-caf-8960" />
@@ -423,23 +423,23 @@
   <project path="hardware/qcom/msm8x27" name="platform/hardware/qcom/msm8x27" groups="qcom_msm8x27" />
   <project path="hardware/qcom/msm8x74" name="platform/hardware/qcom/msm8x74" groups="qcom_msm8x74" />
   <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" />
-  <project path="hardware/qcom/power" name="DirtyUnicorns/android_hardware_qcom_power" remote="github" revision="lollipop" />
+  <project path="hardware/qcom/power" name="DirtyUnicorns/android_hardware_qcom_power" remote="github" revision="lollipop-caf" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
-  <project path="hardware/qcom/wlan" name="DirtyUnicorns/android_hardware_qcom_wlan" remote="github" revision="lollipop" />
-  <project path="hardware/ril" name="DirtyUnicorns/android_hardware_ril" remote="github" revision="lollipop" />
+  <project path="hardware/qcom/wlan" name="DirtyUnicorns/android_hardware_qcom_wlan" remote="github" revision="lollipop-caf" />
+  <project path="hardware/ril" name="DirtyUnicorns/android_hardware_ril" remote="github" revision="lollipop-caf" />
   <project path="hardware/ril-caf" name="CyanogenMod/android_hardware_ril" groups="pdk" revision="cm-12.1-caf" remote="github" />
   <project path="hardware/samsung" name="ArchiDroid/android_hardware_samsung" remote="github" revision="cm-12.1" />
-  <project path="hardware/samsung_slsi/exynos5" name="DirtyUnicorns/android_hardware_samsung_slsi_exynos5" remote="github" revision="lollipop" />
-  <project path="hardware/ti/omap3" name="DirtyUnicorns/android_hardware_ti_omap3" remote="github" revision="lollipop" />
+  <project path="hardware/samsung_slsi/exynos5" name="DirtyUnicorns/android_hardware_samsung_slsi_exynos5" remote="github" revision="lollipop-caf" />
+  <project path="hardware/ti/omap3" name="DirtyUnicorns/android_hardware_ti_omap3" remote="github" revision="lollipop-caf" />
   <project path="hardware/ti/omap4" name="CyanogenMod/android_hardware_ti_omap4" remote="github" revision="cm-12.1" />
-  <project path="hardware/ti/omap4xxx" name="DirtyUnicorns/android_hardware_ti_omap4xxx" remote="github" revision="lollipop" />
-  <project path="hardware/ti/wlan" name="DirtyUnicorns/android_hardware_ti_wlan" remote="github" revision="lollipop" />
-  <project path="hardware/ti/wpan" name="DirtyUnicorns/android_hardware_ti_wpan" remote="github" revision="lollipop" />
-  <project path="libcore" name="DirtyUnicorns/android_libcore" groups="pdk" remote="github" revision="lollipop" />
+  <project path="hardware/ti/omap4xxx" name="DirtyUnicorns/android_hardware_ti_omap4xxx" remote="github" revision="lollipop-caf" />
+  <project path="hardware/ti/wlan" name="DirtyUnicorns/android_hardware_ti_wlan" remote="github" revision="lollipop-caf" />
+  <project path="hardware/ti/wpan" name="DirtyUnicorns/android_hardware_ti_wpan" remote="github" revision="lollipop-caf" />
+  <project path="libcore" name="DirtyUnicorns/android_libcore" groups="pdk" remote="github" revision="lollipop-caf" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
-  <project path="packages/apps/Bluetooth" name="DirtyUnicorns/android_packages_apps_Bluetooth" remote="github" revision="lollipop" />
+  <project path="packages/apps/Bluetooth" name="DirtyUnicorns/android_packages_apps_Bluetooth" remote="github" revision="lollipop-caf" />
   <project path="packages/apps/BluetoothExt" name="CyanogenMod/android_packages_apps_BluetoothExt" remote="github" revision="cm-12.1" />
   <project path="packages/apps/Browser" name="HazyTeam/platform_packages_apps_browser" remote="github" revision="hazypop" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
@@ -447,15 +447,15 @@
   <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs" />
-  <project path="packages/apps/Contacts" name="DirtyUnicorns/android_packages_apps_Contacts" remote="github" revision="lollipop" />
-  <project path="packages/apps/ContactsCommon" name="DirtyUnicorns/android_packages_apps_ContactsCommon" remote="github" revision="lollipop" />
+  <project path="packages/apps/Contacts" name="DirtyUnicorns/android_packages_apps_Contacts" remote="github" revision="lollipop-caf" />
+  <project path="packages/apps/ContactsCommon" name="DirtyUnicorns/android_packages_apps_ContactsCommon" remote="github" revision="lollipop-caf" />
   <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" />
-  <project path="packages/apps/Dialer" name="DirtyUnicorns/android_packages_apps_Dialer" remote="github" revision="lollipop" />
+  <project path="packages/apps/Dialer" name="DirtyUnicorns/android_packages_apps_Dialer" remote="github" revision="lollipop-caf" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
-  <project path="packages/apps/InCallUI" name="DirtyUnicorns/android_packages_apps_InCallUI" remote="github" revision="lollipop" />
+  <project path="packages/apps/InCallUI" name="DirtyUnicorns/android_packages_apps_InCallUI" remote="github" revision="lollipop-caf" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
@@ -470,7 +470,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/SamsungServiceMode" name="DirtyUnicorns/android_packages_apps_SamsungServiceMode" remote="github" revision="lollipop" />
+  <project path="packages/apps/SamsungServiceMode" name="DirtyUnicorns/android_packages_apps_SamsungServiceMode" remote="github" revision="lollipop-caf" />
   <project path="packages/apps/Settings" name="HazyTeam/platform_packages_apps_settings" remote="github" revision="lolli-sammy" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
@@ -488,18 +488,18 @@
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" groups="pdk-cw-fs" />
   <project path="packages/providers/ContactsProvider" name="DirtyUnicorns/android_packages_providers_ContactsProvider" groups="pdk-cw-fs" remote="github" revision="lollipop-caf" />
-  <project path="packages/providers/DownloadProvider" name="DirtyUnicorns/android_packages_providers_DownloadProvider" groups="pdk-cw-fs" remote="github" revision="lollipop" />
+  <project path="packages/providers/DownloadProvider" name="DirtyUnicorns/android_packages_providers_DownloadProvider" groups="pdk-cw-fs" remote="github" revision="lollipop-caf" />
   <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" groups="pdk-cw-fs" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" />
-  <project path="packages/providers/TelephonyProvider" name="DirtyUnicorns/android_packages_providers_TelephonyProvider" remote="github" revision="lollipop" />
+  <project path="packages/providers/TelephonyProvider" name="DirtyUnicorns/android_packages_providers_TelephonyProvider" remote="github" revision="lollipop-caf" />
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs" />
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" />
   <project path="packages/services/Mms" name="DirtyUnicorns/android_packages_services_Mms" remote="github" revision="lollipop-caf" />
-  <project path="packages/services/Telecomm" name="DirtyUnicorns/android_packages_services_Telecomm" remote="github" revision="lollipop" />
-  <project path="packages/services/Telephony" name="DirtyUnicorns/android_packages_services_Telephony" remote="github" revision="lollipop" />
+  <project path="packages/services/Telecomm" name="DirtyUnicorns/android_packages_services_Telecomm" remote="github" revision="lollipop-caf" />
+  <project path="packages/services/Telephony" name="DirtyUnicorns/android_packages_services_Telephony" remote="github" revision="lollipop-caf" />
   <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" />
   <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" />
   <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" />
@@ -562,14 +562,14 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
-  <project path="system/core" name="DirtyUnicorns/android_system_core" groups="pdk" remote="github" revision="lollipop" />
+  <project path="system/core" name="DirtyUnicorns/android_system_core" groups="pdk" remote="github" revision="lollipop-caf" />
   <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
-  <project path="system/media" name="DirtyUnicorns/android_system_media" groups="pdk" remote="github" revision="lollipop" />
-  <project path="system/netd" name="DirtyUnicorns/android_system_netd" groups="pdk" remote="github" revision="lollipop" />
+  <project path="system/media" name="DirtyUnicorns/android_system_media" groups="pdk" remote="github" revision="lollipop-caf" />
+  <project path="system/netd" name="DirtyUnicorns/android_system_netd" groups="pdk" remote="github" revision="lollipop-caf" />
   <project path="system/qcom" name="DirtyUnicorns/android_system_qcom" remote="github" revision="lollipop-caf" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/vold" name="DirtyUnicorns/android_system_vold" groups="pdk" remote="github" revision="lollipop" />
+  <project path="system/vold" name="DirtyUnicorns/android_system_vold" groups="pdk" remote="github" revision="lollipop-caf" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
