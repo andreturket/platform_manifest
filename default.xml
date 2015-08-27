@@ -27,7 +27,6 @@
   <project path="bionic" name="DirtyUnicorns/android_bionic" remote="github" revision="lollipop-caf" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
   <project path="bootable/twrp" name="omnirom/android_bootable_recovery" remote="github" revision="android-5.1" />
-  <project path="crowdin" name="DirtyUnicorns/crowdin" remote="github" revision="lollipop-caf" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" />
   <project path="developers/build" name="platform/developers/build" />
