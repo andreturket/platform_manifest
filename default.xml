@@ -410,7 +410,6 @@
   <project path="hardware/qcom/display-caf/msm8974" name="DirtyUnicorns/android_hardware_qcom_display" groups="qcom,qcom_display" revision="lollipop-caf-8974" remote="github" />
   <project path="hardware/qcom/fm" name="CyanogenMod/android_hardware_qcom_fm" revision="cm-12.1" remote="github" />
   <project path="hardware/qcom/gps" name="DirtyUnicorns/android_hardware_qcom_gps" remote="github" revision="lollipop-caf" />
-  <project path="hardware/qcom/keymaster" name="DirtyUnicorns/android_hardware_qcom_keymaster" remote="github" revision="lollipop-caf" />
   <project path="hardware/qcom/media/default" name="DirtyUnicorns/android_hardware_qcom_media" remote="github" revision="lollipop-caf" />
   <project path="hardware/qcom/media-caf/apq8084" name="DirtyUnicorns/android_hardware_qcom_media" groups="qcom" remote="github" revision="lollipop-caf-8226" />
   <project path="hardware/qcom/media-caf/msm8226" name="DirtyUnicorns/android_hardware_qcom_media" groups="qcom" remote="github" revision="lollipop-caf-8226" />
