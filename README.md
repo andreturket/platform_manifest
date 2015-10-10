@@ -4,7 +4,7 @@ To get started with Hazy Rom, you'll need to get familiar with Git and Repo.
 
 To initialize your local repository using the HazyTeam trees, use a command like this:
 
-repo init -u git://github.com/HazyTeam/platform_manifest.git -b hazy-mallow
+repo init -u git://github.com/HazyTeam/platform_manifest.git -b hazy-M-i9300
 
 Then to sync up:
 
