@@ -18,7 +18,7 @@
 
   <project path="manifest" name="HazyTeam/platform_manifest" remote="github" revision="hazy-M-i9300" />
 
-  <project path="build" name="HazyTeam/platform_build_test" groups="pdk" remote="github" revision="hazy-mallow" >
+  <project path="build" name="HazyTeam/platform_build_test" groups="pdk" remote="github" revision="hazy-M-i9300" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
