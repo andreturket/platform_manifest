@@ -55,8 +55,8 @@
 
   <project path="device/samsung/smdk4412-common" name="HazyTeam/android_device_samsung_smdk4412-common" remote="github"  revision="hazy-mallow" />
   <project path="device/samsung/i9300" name="HazyTeam/android_device_samsung_i9300" remote="github" revision="hazy-mallow" />
-  <project path="kernel/samsung/smdk4412" name="ArchiDroid/android_kernel_samsung_smdk4412" remote="github" revision="cm-12.1" />
-  <project path="vendor/samsung" name="ArchiDroid/proprietary_vendor_samsung" remote="github" revision="cm-12.1" />
+  <project path="kernel/samsung/smdk4412" name="Haxynox/android_kernel_samsung_smdk4412" remote="github" revision="Mmm" />
+  <project path="vendor/samsung" name="Haxynox/proprietary_vendor_samsung" remote="github" revision="Mmm" />
 
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -459,14 +459,14 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/bt" name="platform/system/bt" groups="pdk" />
-  <project path="system/core" name="mnemonyc/platform_system_core" groups="pdk" remote="github" revision="hazy-mallow" />
-  <project path="system/extras" name="platform/system/extras" groups="pdk" />
+  <project path="system/core" name="Haxynox/android_system_core" groups="pdk" remote="github" revision="Mmm" />
+  <project path="system/extras" name="Haxynox/android_system_extras" groups="pdk" remote="github" revision="Mmm" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/vold" name="HazyTeam/platform_system_vold" groups="pdk" remote="github" revision="hazy-mallow" />
+  <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
