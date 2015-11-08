@@ -462,7 +462,7 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/bt" name="platform/system/bt" groups="pdk" />
-  <project path="system/core" name="mnemonyc/platform_system_core" groups="pdk" remote="github" revision="hazy-M-test" />
+  <project path="system/core" name="mnemonyc/platform_system_core" groups="pdk" remote="github" revision="hazy-mallow" />
   <project path="system/extras" name="mnemonyc/platform_system_extras" groups="pdk" remote="github" revision="hazy-mallow" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
