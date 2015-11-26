@@ -56,10 +56,10 @@
   <project path="vendor/moto" name="PureNexus/proprietary_vendor_moto" remote="github" revision="mm" />
 
   <project path="device/huawei/angler" name="mnemonyc/platform_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="github"  revision="hazy-mallow" />
-  <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" />
+  <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" revision="marshmallow-dr-release" />
   <project path="vendor/huawei" name="PureNexus/proprietary_vendor_huawei" remote="github" revision="mm" />
   <project path="device/lge/bullhead" name="mnemonyc/platform_device_lge_bullhead" groups="device,bullhead" remote="github"  revision="hazy-mallow" />
-  <project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="device,bullhead" />
+  <project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="device,bullhead" revision="marshmallow-dr-release" />
   <project path="vendor/lge" name="PureNexus/proprietary_vendor_lge" remote="github" revision="mm" />
 
   <!--project path="device/samsung/smdk4412-common" name="HazyTeam/android_device_samsung_smdk4412-common" remote="github"  revision="hazy-mallow" />
