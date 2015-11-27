@@ -16,7 +16,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="manifest" name="HazyTeam/platform_manifest" remote="github" revision="hazy-M-i9300" />
+  <project path="manifest" name="HazyTeam/platform_manifest" remote="github" revision="hazy-i9300-MM-test" />
 
   <project path="build" name="HazyTeam/platform_build_test" groups="pdk" remote="github" revision="hazy-MM-test" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -24,8 +24,8 @@
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
-  <project path="bionic" name="platform/bionic" groups="pdk" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
+  <project path="bionic" name="mnemonyc/platform_bionic" groups="pdk" remote="github" revision="hazy-mallow" />
+  <project path="bootable/recovery" name="mnemonyc/android_bootable_recovery" groups="pdk" remote="github" revision="hazy-mallow" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="developers/build" name="platform/developers/build" />
@@ -51,10 +51,10 @@
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu,broadcom_pdk,generic_fs" />
   <project path="device/sample" name="device/sample" groups="pdk" />
+
   <project path="device/moto/shamu" name="HazyTeam/android_device_moto_shamu" groups="device,shamu,broadcom_pdk" remote="github"  revision="hazy-mallow" />
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" revision="marshmallow-dr-release" />
   <project path="vendor/moto" name="PureNexus/proprietary_vendor_moto" remote="github" revision="mm" />
-
   <project path="device/huawei/angler" name="mnemonyc/platform_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="github"  revision="hazy-mallow" />
   <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" revision="marshmallow-dr-release" />
   <project path="vendor/huawei" name="PureNexus/proprietary_vendor_huawei" remote="github" revision="mm" />
@@ -62,10 +62,10 @@
   <project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="device,bullhead" revision="marshmallow-dr-release" />
   <project path="vendor/lge" name="PureNexus/proprietary_vendor_lge" remote="github" revision="mm" />
 
-  <!--project path="device/samsung/smdk4412-common" name="HazyTeam/android_device_samsung_smdk4412-common" remote="github"  revision="hazy-mallow" />
+  <project path="device/samsung/smdk4412-common" name="HazyTeam/android_device_samsung_smdk4412-common" remote="github"  revision="hazy-mallow" />
   <project path="device/samsung/i9300" name="HazyTeam/android_device_samsung_i9300" remote="github" revision="hazy-mallow" />
   <project path="kernel/samsung/smdk4412" name="Haxynox/android_kernel_samsung_smdk4412" remote="github" revision="Mmm" />
-  <project path="vendor/samsung" name="Haxynox/proprietary_vendor_samsung" remote="github" revision="Mmm" /-->
+  <project path="vendor/samsung" name="Haxynox/proprietary_vendor_samsung" remote="github" revision="Mmm" />
 
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -248,12 +248,11 @@
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/sonic" name="platform/external/sonic" groups="pdk" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
-  <!--project path="external/sony/boringssl-compat" name="Haxynox/android_external_sony_boringssl-compat" remote="github" revision="Mmm" /-->
   <project path="external/speex" name="platform/external/speex" groups="pdk" />
   <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs,pdk-fs" />
-  <!--project path="external/stlport" name="Haxynox/android_external_stlport" remote="github" revision="Mmm" /-->
+  <project path="external/stlport" name="Haxynox/android_external_stlport" remote="github" revision="Mmm" />
   <project path="external/strace" name="platform/external/strace" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/svox" name="platform/external/svox" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk-cw-fs,pdk-fs" />
@@ -272,13 +271,13 @@
   <project path="external/vogar" name="platform/external/vogar" groups="pdk" />
   <project path="external/webp" name="platform/external/webp" groups="pdk,qcom_msm8x26" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
-  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" />
+  <project path="external/wpa_supplicant_8" name="mnemonyc/platform_external_wpa_supplicant_8" groups="pdk" remote="github" revision="hazy-mallow" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
+  <project path="frameworks/av" name="mnemonyc/platform_frameworks_av" groups="pdk" remote="github" revision="hazy-mallow" />
   <project path="frameworks/base" name="mnemonyc/platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github" revision="hazy-mallow" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
@@ -288,7 +287,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" />
+  <project path="frameworks/native" name="mnemonyc/platform_frameworks_native" groups="pdk" remote="github" revision="hazy-mallow" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
@@ -302,10 +301,10 @@
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-fs" />
   <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
+  <project path="frameworks/opt/net/wifi" name="mnemonyc/platform_frameworks_opt_net_wifi" groups="pdk" remote="github" revision="hazy-mallow" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
+  <project path="frameworks/opt/telephony" name="mnemonyc/platform_frameworks_opt_telephony" groups="pdk" remote="github" revision="hazy-mallow" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs,pdk-fs" />
@@ -316,8 +315,8 @@
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" />
-  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
-  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
+  <project path="hardware/broadcom/libbt" name="mnemonyc/platform_hardware_broadcom_libbt" groups="pdk" remote="github" revision="hazy-mallow" />
+  <project path="hardware/broadcom/wlan" name="mnemonyc/platform_hardware_broadcom_wlan" groups="pdk,broadcom_wlan" remote="github" revision="hazy-mallow" />
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
   <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" />
   <project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel" />
@@ -333,8 +332,8 @@
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
   <project path="hardware/intel/sensors" name="platform/hardware/intel/sensors" groups="intel_sensors" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
+  <project path="hardware/libhardware" name="mnemonyc/platform_hardware_libhardware" groups="pdk" remote="github" revision="hazy-mallow" />
+  <project path="hardware/libhardware_legacy" name="mnemonyc/platform_hardware_libhardware_legacy" groups="pdk" remote="github" revision="hazy-mallow" />
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" />
   <project path="hardware/mediatek" name="platform/hardware/mediatek" groups="mediatek,mediatek_wear" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
@@ -354,8 +353,8 @@
   <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
-  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
-  <!--project path="hardware/samsung" name="mnemonyc/platform_hardware_samsung" remote="github" revision="hazy-mallow" /-->
+  <project path="hardware/ril" name="mnemonyc/platform_hardware_ril" groups="pdk" remote="github" revision="hazy-mallow" />
+  <project path="hardware/samsung" name="mnemonyc/platform_hardware_samsung" remote="github" revision="hazy-mallow" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
@@ -397,7 +396,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" groups="pdk-fs" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" groups="pdk-fs" />
-  <!--project path="packages/apps/SamsungServiceMode" name="mnemonyc/android_packages_apps_SamsungServiceMode" remote="github" revision="hazy-mallow" /-->
+  <project path="packages/apps/SamsungServiceMode" name="mnemonyc/android_packages_apps_SamsungServiceMode" remote="github" revision="hazy-mallow" />
   <project path="packages/apps/Settings" name="mnemonyc/platform_packages_apps_settings" groups="pdk-fs" remote="github" revision="hazy-mallow" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" groups="pdk-fs" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" />
