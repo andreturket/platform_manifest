@@ -18,7 +18,7 @@
 
   <project path="manifest" name="OhMyLob/platform_manifest" remote="github" revision="hazy-mallow" />
 
-  <project path="build" name="OhMyLob/platform_build" remote="github" revision="hazy-mallow" groups="pdk" >
+  <project path="build" name="OhMyLob/platform_build" remote="github" revision="hazy-mallow-osx" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
