@@ -21,7 +21,18 @@
   <project path="build" name="OhMyLob/platform_build" remote="github" revision="hazy-mallow-osx" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  
+  <!-- Hazy repo -->
+  <project path="device/huawei/angler" remote="github" name="HazyTeam/platform_device_huawei_angler" revision="hazy-mallow" groups="device,angler,broadcom_pdk" />
+  <project path="device/moto/shamu" remote="github" name="OhMyLob/platform_device_moto_shamu" revision="hazy-mallow" groups="device,shamu,broadcom_pdk" />
+  <project path="frameworks/base" name="OhMyLob/platform_frameworks_base" remote="github" revision="hazy-mallow" groups="pdk-cw-fs,pdk-fs" />
+  <project path="kernel/huawei/angler" remote="github" name="HazyTeam/platform_kernel_huawei_angler" revision="hazy-mallow" />
+  <project path="packages/apps/Browser" name="HazyTeam/platform_packages_apps_browser" remote="github" revision="master" groups="pdk-fs" />  <project path="packages/apps/Settings" name="OhMyLob/platform_packages_apps_settings" remote="github" revision="hazy-mallow" groups="pdk-fs" />
+  <project path="packages/apps/Settings" name="OhMyLob/platform_packages_apps_settings" remote="github" revision="hazy-mallow" groups="pdk-fs" />
+  <project path="vendor/hazy" name="OhMyLob/platform_vendor_hazy" remote="github" revision="hazy-mallow" />
+  <project path="vendor/huawei" name="HazyTeam/proprietary_vendor_huawei" remote="github" revision="hazy-mallow" />
 
+  <!-- AOSP repo -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
@@ -59,7 +70,6 @@
   <project path="device/htc/flounder-kernel" name="device/htc/flounder-kernel" groups="device,flounder,broadcom_pdk" clone-depth="1" />
   <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead,broadcom_pdk,generic_fs" />
   <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead,broadcom_pdk,generic_fs" clone-depth="1" />
-  <project path="device/moto/shamu" remote="github" name="OhMyLob/platform_device_moto_shamu" revision="hazy-mallow" groups="device,shamu,broadcom_pdk" />
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
@@ -272,7 +282,6 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="OhMyLob/platform_frameworks_base" remote="github" revision="hazy-mallow" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -356,7 +365,6 @@
   <project path="ndk" name="platform/ndk" groups="generic_fs" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/Browser" name="HazyTeam/platform_packages_apps_browser" remote="github" revision="master" groups="pdk-fs" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" groups="pdk-fs" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" groups="pdk-fs" />
   <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" groups="pdk-fs" />
@@ -389,7 +397,6 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" groups="pdk-fs" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" groups="pdk-fs" />
-  <project path="packages/apps/Settings" name="OhMyLob/platform_packages_apps_settings" remote="github" revision="hazy-mallow" groups="pdk-fs" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" groups="pdk-fs" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs" />
@@ -484,6 +491,5 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-  <project path="vendor/hazy" name="OhMyLob/platform_vendor_hazy" remote="github" revision="hazy-mallow" />
   
 </manifest>
