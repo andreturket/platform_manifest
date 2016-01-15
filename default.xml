@@ -25,7 +25,7 @@
   <!-- Hazy repo -->
   <project path="device/huawei/angler" remote="github" name="HazyTeam/platform_device_huawei_angler" revision="hazy-mallow" groups="device,angler,broadcom_pdk" />
   <project path="device/moto/shamu" remote="github" name="OhMyLob/platform_device_moto_shamu" revision="hazy-mallow" groups="device,shamu,broadcom_pdk" />
-  <project path="frameworks/base" name="OhMyLob/platform_frameworks_base" remote="github" revision="hazy-mallow" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/base" name="HazyTeam/platform_frameworks_base" remote="github" revision="hazy-mallow-test" groups="pdk-cw-fs,pdk-fs" />
   <project path="kernel/huawei/angler" remote="github" name="HazyTeam/platform_kernel_huawei_angler" revision="hazy-mallow" />
   <project path="packages/apps/Browser" name="HazyTeam/platform_packages_apps_browser" remote="github" revision="master" groups="pdk-fs" />
   <project path="packages/apps/Settings" name="HazyTeam/platform_packages_apps_Settings" remote="github" revision="hazy-mallow-test" groups="pdk-fs" />
