@@ -24,6 +24,7 @@
   
   <!-- Hazy repo -->
   <project path="device/huawei/angler" name="HazyTeam/device_huawei_angler" remote="github" revision="hazy-mallow" groups="device,angler,broadcom_pdk" />
+  <project path="device/lge/bullhead" name="HazyTeam/device_lge_bullhead" remote="github" revision="hazy-mallow" groups="device,bullhead" />
   <project path="device/moto/shamu" name="HazyTeam/device_moto_shamu" remote="github" revision="hazy-mallow" groups="device,shamu,broadcom_pdk" />
   <project path="frameworks/base" name="HazyTeam/platform_frameworks_base" remote="github" revision="hazy-mallow-test" groups="pdk-cw-fs,pdk-fs" />
   <project path="kernel/huawei/angler" name="HazyTeam/platform_kernel_huawei_angler" remote="github" revision="hazy-mallow" />
@@ -71,6 +72,7 @@
   <project path="device/htc/flounder-kernel" name="device/htc/flounder-kernel" groups="device,flounder,broadcom_pdk" clone-depth="1" />
   <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead,broadcom_pdk,generic_fs" />
   <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead,broadcom_pdk,generic_fs" clone-depth="1" />
+  <project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="device,bullhead" />
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
