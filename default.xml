@@ -26,6 +26,7 @@
   <project path="device/huawei/angler" name="HazyTeam/device_huawei_angler" remote="github" revision="hazy-mallow" groups="device,angler,broadcom_pdk" />
   <project path="device/lge/bullhead" name="HazyTeam/device_lge_bullhead" remote="github" revision="hazy-mallow" groups="device,bullhead" />
   <project path="device/moto/shamu" name="HazyTeam/device_moto_shamu" remote="github" revision="hazy-mallow" groups="device,shamu,broadcom_pdk" />
+  <project path="external/chromium-webview" name="HazyTeam/platform_external_chromium-webview" remote="github" revision="hazy-mallow" groups="pdk" />
   <project path="frameworks/base" name="HazyTeam/platform_frameworks_base" remote="github" revision="hazy-mallow-test" groups="pdk-cw-fs,pdk-fs" />
   <project path="kernel/huawei/angler" name="HazyTeam/platform_kernel_huawei_angler" remote="github" revision="hazy-mallow" />
   <project path="packages/apps/Browser" name="HazyTeam/platform_packages_apps_browser" remote="github" revision="master" groups="pdk-fs" />
@@ -96,7 +97,6 @@
   <project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" groups="pdk-fs" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" />
-  <project path="external/chromium-webview" name="platform/external/chromium-webview" groups="pdk" />
   <project path="external/clang" name="platform/external/clang" groups="pdk" />
   <project path="external/cmockery" name="platform/external/cmockery" groups="pdk-fs" />
   <project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" />
