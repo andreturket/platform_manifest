@@ -31,7 +31,7 @@
   <project path="packages/apps/Browser" name="HazyTeam/platform_packages_apps_browser" remote="github" revision="master" groups="pdk-fs" />
   <project path="packages/apps/Dialer" name="HazyTeam/platform_packages_apps_Dialer" remote="github" revision="hazy-mallow" groups="pdk-fs" />
   <project path="packages/apps/Settings" name="HazyTeam/platform_packages_apps_Settings" remote="github" revision="hazy-mallow-test" groups="pdk-fs" />
-  <project path="vendor/hazy" name="OhMyLob/platform_vendor_hazy" remote="github" revision="hazy-mallow" />
+  <project path="vendor/hazy" name="PureNexus/proprietary_vendor_hazy" remote="github" revision="hazy-mallow" />
   <project path="vendor/huawei" name="HazyTeam/proprietary_vendor_huawei" remote="github" revision="hazy-mallow" />
 
   <!-- AOSP repo -->
