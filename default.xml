@@ -34,6 +34,8 @@
   <project path="packages/apps/Settings" name="HazyTeam/platform_packages_apps_Settings" remote="github" revision="hazy-mallow" groups="pdk-fs" />
   <project path="vendor/hazy" name="HazyTeam/proprietary_vendor_hazy" remote="github" revision="hazy-mallow" />
   <project path="vendor/huawei" name="HazyTeam/proprietary_vendor_huawei" remote="github" revision="hazy-mallow" />
+  <project path="vendor/lge" name="HazyTeam/proprietary_vendor_lge" remote="github" revision="hazy-mallow" />
+  <project path="vendor/moto" name="HazyTeam/proprietary_vendor_moto" remote="github" revision="hazy-mallow" />
 
   <!-- AOSP repo -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
