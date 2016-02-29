@@ -23,9 +23,6 @@
   </project>
   
   <!-- Hazy repo -->
-  <project path="device/huawei/angler" name="HazyTeam/device_huawei_angler" remote="github" revision="hazy-mallow" groups="device,angler,broadcom_pdk" />
-  <project path="device/lge/bullhead" name="HazyTeam/device_lge_bullhead" remote="github" revision="hazy-mallow" groups="device,bullhead" />
-  <project path="device/moto/shamu" name="HazyTeam/device_moto_shamu" remote="github" revision="hazy-mallow" groups="device,shamu,broadcom_pdk" />
   <project path="external/busybox" name="HazyTeam/platform_external_busybox" remote="github" revision="hazy-mallow" />
   <project path="external/chromium-webview" name="HazyTeam/platform_external_chromium-webview" remote="github" revision="hazy-mallow" groups="pdk" />
   <project path="frameworks/base" name="HazyTeam/platform_frameworks_base" remote="github" revision="hazy-mallow" groups="pdk-cw-fs,pdk-fs" />
