@@ -38,7 +38,7 @@
   <project path="vendor/moto" name="HazyTeam/proprietary_vendor_moto" remote="github" revision="hazy-mallow" />
 
   <!-- AOSP repo -->
-  <project path="abi/cpp" name="platform/abi/cpp" gfroups="pdk" />
+  <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
