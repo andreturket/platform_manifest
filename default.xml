@@ -46,7 +46,7 @@
   <project path="packages/services/Telecomm" name="HazyTeam/platform_packages_services_Telecomm" remote="github" revision="hazy-mallow" groups="pdk-cw-fs,pdk-fs" />
   
   <!-- Hazy platform/system -->
-  <project path="system/core" name="HazyTeam/platform_system_core" remote="github" revision="hazy-mallow" groups="pdk" />
+  <project path="system/core" name="HazyTeam/system_core" remote="github" revision="hazy-mallow" groups="pdk" />
   
   <!-- Hazy vendor -->
   <project path="vendor/hazy" name="HazyTeam/proprietary_vendor_hazy" remote="github" revision="hazy-mallow" />
