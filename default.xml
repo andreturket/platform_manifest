@@ -45,6 +45,9 @@
   <project path="packages/apps/Settings" name="HazyTeam/platform_packages_apps_Settings" remote="github" revision="hazy-mallow" groups="pdk-fs" />
   <project path="packages/services/Telecomm" name="HazyTeam/platform_packages_services_Telecomm" remote="github" revision="hazy-mallow" groups="pdk-cw-fs,pdk-fs" />
   
+  <!-- Hazy platform/system -->
+  <project path="system/core" name="HazyTeam/platform_system_core" remote="github" revision="hazy-mallow" groups="pdk" />
+  
   <!-- Hazy vendor -->
   <project path="vendor/hazy" name="HazyTeam/proprietary_vendor_hazy" remote="github" revision="hazy-mallow" />
   <project path="vendor/huawei" name="HazyTeam/proprietary_vendor_huawei" remote="github" revision="hazy-mallow" />
@@ -478,7 +481,6 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/bt" name="platform/system/bt" groups="pdk" />
-  <project path="system/core" name="platform/system/core" groups="pdk" />
   <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
