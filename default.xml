@@ -16,7 +16,7 @@
   <remote  name="hazy"
            fetch="git://github.com/HazyTeam" />
 
-  <project path="build" name="SonyAosp/platform_build" groups="pdk" remote="github" revision="mm-6.0" >
+  <project path="build" name="HazyTeam/platform_build" groups="pdk" remote="github" revision="hazy-mallow" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
