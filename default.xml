@@ -2,47 +2,26 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com"
-           review="android-review.googlesource.com" />
-
-  <remote  name="github"
-           fetch=".." />
-
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
-
-  <default revision="refs/tags/android-6.0.1_r16"
+           fetch="https://android.googlesource.com/" />
+  <default revision="refs/tags/android-6.0.1_r43"
            remote="aosp"
-           sync-c="true"
            sync-j="4" />
 
-  <project path="manifest" name="HazyTeam/platform_manifest" remote="github" revision="hazy-mallow-legacy" />
+  <remote  name="github"
+           fetch="git://github.com/" />
 
-  <project path="build" name="HazyTeam/platform_build" remote="github" revision="hazy-mallow" groups="pdk" >
+  <remote  name="sony"
+           fetch="git://github.com/sonyxperiadev/" />
+
+  <remote  name="hazy"
+           fetch="git://github.com/HazyTeam" />
+
+  <project path="build" name="SonyAosp/platform_build" groups="pdk" remote="github" revision="mm-6.0" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  
-  <!-- Hazy repo -->
-  <project path="external/busybox" name="HazyTeam/platform_external_busybox" remote="github" revision="hazy-mallow" />
-  <project path="external/chromium-webview" name="HazyTeam/platform_external_chromium-webview" remote="github" revision="hazy-mallow" groups="pdk" />
-  <project path="frameworks/base" name="HazyTeam/platform_frameworks_base" remote="github" revision="hazy-mallow" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/Browser" name="HazyTeam/platform_packages_apps_browser" remote="github" revision="master" groups="pdk-fs" />
-  <project path="packages/apps/Dialer" name="HazyTeam/platform_packages_apps_Dialer" remote="github" revision="hazy-mallow" groups="pdk-fs" />
-  <project path="packages/apps/Settings" name="HazyTeam/platform_packages_apps_Settings" remote="github" revision="hazy-mallow" groups="pdk-fs" />
-  <project path="vendor/hazy" name="HazyTeam/proprietary_vendor_hazy" remote="github" revision="hazy-mallow" />
-  <project path="external/tinyalsa" name="HazyTeam/platform_external_tinyalsa" remote="github" revision="hazy-mallow-legacy" groups="pdk" />
-  <project path="bionic" name="HazyTeam/platform_bionic" remote="github" revision="hazy-mallow-legacy" groups="pdk" />
-  <project path="frameworks/av" name="HazyTeam/platform_frameworks_av" remote="github" revision="hazy-mallow-legacy" groups="pdk" />
-  <project path="frameworks/native" name="HazyTeam/platform_frameworks_native" remote="github" revision="hazy-mallow-legacy" groups="pdk" />
-  <project path="frameworks/opt/telephony" name="HazyTeam/platform_frameworks_opt_telephony" remote="github" revision="hazy-mallow-legacy" groups="pdk" />
-  <project path="hardware/libhardware" name="HazyTeam/platform_hardware_libhardware" remote="github" revision="hazy-mallow-legacy" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="HazyTeam/platform_hardware_libhardware-legacy" remote="github" revision="hazy-mallow-legacy" groups="pdk" />
-  <project path="hardware/ril" name="HazyTeam/platform_hardware_ril" remote="github" revision="hazy-mallow-legacy" groups="pdk" />
-  <project path="system/core" name="HazyTeam/platform_system_core" remote="github" revision="hazy-mallow-legacy" groups="pdk" />
-
-  <!-- AOSP repo -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
+  <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
@@ -67,7 +46,6 @@
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/google/atv" name="device/google/atv" groups="device,fugu,broadcom_pdk,generic_fs" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -90,6 +68,7 @@
   <project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" groups="pdk-fs" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" />
+  <project path="external/chromium-webview" name="platform/external/chromium-webview" groups="pdk" />
   <project path="external/clang" name="platform/external/clang" groups="pdk" />
   <project path="external/cmockery" name="platform/external/cmockery" groups="pdk-fs" />
   <project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" />
@@ -172,7 +151,6 @@
   <project path="external/liblzf" name="platform/external/liblzf" groups="pdk" />
   <project path="external/libmpeg2" name="platform/external/libmpeg2" groups="pdk" />
   <project path="external/libmtp" name="platform/external/libmtp" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/libnfc-nci" name="platform/external/libnfc-nci" groups="pdk" />
   <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" groups="pdk" />
   <project path="external/libnl" name="platform/external/libnl" groups="pdk" />
   <project path="external/libogg" name="platform/external/libogg" groups="pdk" />
@@ -258,7 +236,6 @@
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk,pdk-cw-fs,pdk-fs" />
   <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
   <project path="external/toybox" name="platform/external/toybox" groups="pdk" />
@@ -284,6 +261,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
@@ -300,6 +278,7 @@
   <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs,pdk-fs" />
@@ -310,7 +289,6 @@
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" />
-  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
   <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" />
@@ -327,16 +305,12 @@
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
   <project path="hardware/intel/sensors" name="platform/hardware/intel/sensors" groups="intel_sensors" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
+  <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" />
   <project path="hardware/mediatek" name="platform/hardware/mediatek" groups="mediatek,mediatek_wear" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
-  <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
-  <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
-  <project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="pdk,qcom,qcom_display" />
-  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps" />
-  <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster" />
-  <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
   <project path="hardware/qcom/msm8994" name="platform/hardware/qcom/msm8994" groups="qcom_msm8994" />
   <project path="hardware/qcom/msm8x26" name="platform/hardware/qcom/msm8x26" groups="qcom_msm8x26" />
@@ -355,8 +329,10 @@
   <project path="ndk" name="platform/ndk" groups="generic_fs" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/apps/Browser" name="platform/packages/apps/Browser" groups="pdk-fs"/>
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" groups="pdk-fs" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" groups="pdk-fs" />
+  <project path="packages/apps/Camera" name="platform/packages/apps/Camera" groups="pdk-fs" />
   <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" groups="pdk-fs" />
   <project path="packages/apps/CarrierConfig" name="platform/packages/apps/CarrierConfig" groups="pdk-fs" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" groups="pdk-fs" />
@@ -364,14 +340,17 @@
   <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" groups="pdk-fs" />
   <project path="packages/apps/ContactsCommon" name="platform/packages/apps/ContactsCommon" groups="pdk-fs"/>
   <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" groups="pdk-fs" />
+  <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" groups="pdk-fs" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" groups="pdk-fs" />
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" groups="pdk-fs" />
   <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio" groups="pdk-fs" />
+  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" />
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
   <project path="packages/apps/InCallUI" name="platform/packages/apps/InCallUI" groups="pdk-fs" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" />
+  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" groups="pdk-fs" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" groups="pdk-fs" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" />
@@ -404,7 +383,6 @@
   <project path="packages/providers/CallLogProvider" name="platform/packages/providers/CallLogProvider" groups="pdk-fs" />
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" groups="pdk-fs" />
   <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" groups="pdk-fs" />
@@ -458,7 +436,6 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/bt" name="platform/system/bt" groups="pdk" />
-  <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
@@ -480,4 +457,32 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
   
+  <!-- Hazy repo -->
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="hazy" revision="hazy-mallow" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="hazy" revision="hazy-mallow" />
+  <project path="vendor/hazy" name="proprietary_vendor_hazy" groups="device" remote="hazy" revision="hazy-mallow" />
+
+  <!-- Sony repo -->
+  <project path="external/libnfc-nci" name="SonyAosp/platform_external_libnfc-nci" groups="pdk" remote="github" revision="mm-6.0" />
+  <project path="external/tinyalsa" name="SonyAosp/platform_external_tinyalsa" groups="pdk" remote="github" revision="mm-6.0" />
+  <project path="external/tinycompress" name="SonyAosp/platform_external_tinycompress" groups="pdk" remote="github" revision="mm-6.0" />
+  <project path="frameworks/av" name="SonyAosp/platform_frameworks_av" groups="pdk" remote="github" revision="mm-6.0" />
+  <project path="hardware/broadcom/libbt" name="SonyAosp/platform_hardware_broadcom_libbt" groups="pdk" remote="github" revision="mm-6.0" />
+  <project path="hardware/qcom/audio" name="SonyAosp/platform_hardware_qcom_audio" groups="qcom,qcom_audio" remote="github" revision="mm-6.0" />
+  <project path="hardware/qcom/camera" name="SonyAosp/camera" groups="qcom" remote="github" revision="mm-6.0" />
+  <project path="hardware/qcom/display" name="SonyAosp/platform_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="github" revision="mm-6.0" />
+  <project path="hardware/qcom/gps" name="SonyAosp/platform_hardware_qcom_gps" groups="qcom,qcom_gps" remote="github" revision="mm-6.0" />
+  <project path="hardware/qcom/keymaster" name="SonyAosp/platform_hardware_qcom_keymaster" groups="qcom,qcom_keymaster" remote="github" revision="mm-6.0" />
+  <project path="hardware/qcom/media" name="SonyAosp/platform_hardware_qcom_media" groups="qcom" remote="github" revision="mm-6.0" />
+  <project path="packages/providers/MediaProvider" name="SonyAosp/platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="github" revision="mm-6.0" />
+  <project path="system/core" name="SonyAosp/platform_system_core" groups="pdk" remote="github" revision="mm-6.0" />
+  <project path="system/extras" name="SonyAosp/platform_system_extras" groups="pdk" remote="github" revision="mm-6.0" />
+  <project path="vendor/google" name="SonyAosp/platform_vendor_google" groups="device" remote="github" revision="mm-6.0" />
+  <project path="vendor/qcom/opensource/dataservices" name="SonyAosp/vendor_qcom_opensource_dataservices" groups="device" remote="github" revision="mm-6.0" />
+  <project path="hardware/sony/thermanager" name="thermanager" groups="device" remote="sony" revision="master" />
+  <project path="hardware/sony/mkqcdtbootimg" name="mkqcdtbootimg" groups="device" remote="sony" revision="master" />
+  <project path="hardware/sony/timekeep" name="timekeep" groups="device" remote="sony" revision="master" />
+  <project path="hardware/sony/macaddrsetup" name="macaddrsetup" groups="device" remote="sony" revision="master" />
+  <project path="vendor/qcom/proprietary" name="SonyAosp/platform_vendor_qcom_proprietary" groups="device" remote="github" revision="mm-6.0" />
+
 </manifest>
