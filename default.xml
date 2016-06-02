@@ -83,7 +83,6 @@
   <!-- Turbo repo -->
   <project path="art" name="TurboROM/art" groups="pdk" remote="github" revision="m6.0.1" />
   <project path="bionic" name="TurboROM/bionic" groups="pdk" remote="github" revision="m6.0.1" />
-  <project path="device/qcom/common" name="TurboROM/device_qcom_common" remote="github" revision="m6.0.1" />
   <project path="device/qcom/sepolicy" name="TurboROM/device_qcom_sepolicy" remote="github" revision="m6.0.1" />
   <project path="external/apache-http" name="TurboROM/external_apache-http" groups="pdk" remote="github" revision="m6.0.1" />
   <project path="external/busybox" name="TurboROM/external_busybox" remote="github" revision="m6.0.1" />
@@ -119,6 +118,12 @@
   <project path="system/vold" name="TurboROM/system_vold" groups="pdk" remote="github" revision="m6.0.1" />
 
   <!-- Start CM repos -->
+  <project path="device/cyanogen/msm8916-common" name="android_device_cyanogen_msm8916-common" remote="cm" revision="cm-13.0" />
+  <project path="device/cyanogen/msm8939-common" name="android_device_cyanogen_msm8939-common" remote="cm" revision="cm-13.0" />
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="cm" revision="cm-13.0" />
+  <project path="kernel/cyanogen/msm8916" name="android_kernel_cyanogen_msm8916" remote="cm" revision="staging/cm-13.0-lettuce" />
+  <project path="vendor/yu" name="TheMuppets/proprietary_vendor_yu" remote="github" revision="cm-13.0" />
+  
   <project path="external/connectivity" name="android_external_connectivity" remote="cm" revision="cm-13.0" />
   <project path="external/doclava" name="android_external_doclava" groups="pdk-cw-fs,pdk-fs" remote="cm" revision="cm-13.0" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="cm" revision="cm-13.0" />
