@@ -67,7 +67,7 @@
   <project path="device/yu/tomato" name="device_yu_tomato" remote="hazy" revision="hazy-mallow" />
 
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="hazy" revision="hazy-mallow-legacy" />
-
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" groups="pdk" remote="hazy" revision="hazy-mallow-legacy" />
   
   <project path="hardware/qcom/audio-caf/msm8916" name="platform_hardware_qcom_audio-caf_msm8916" groups="qcom,qcom_audio" remote="hazy" revision="hazy-mallow-legacy" />
 
