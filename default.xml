@@ -132,6 +132,7 @@
   <project path="external/f2fs-tools" name="android_external_f2fs-tools" groups="pdk" remote="cm" revision="cm-13.0" />
   <project path="external/google" name="android_external_google" remote="cm" revision="cm-13.0" />
   <project path="external/vogar" name="android_external_vogar" groups="pdk" remote="cm" revision="cm-13.0" />
+  <project path="external/libnetfilter_conntrack" name="android_external_libnetfilter_conntrack" remote="cm" revision="cm-13.0" />
   <project path="external/libnfnetlink" name="android_external_libnfnetlink" remote="cm" revision="cm-13.0" />
   <project path="external/libpng" name="android_external_libpng" groups="pdk" remote="cm" revision="cm-13.0" />
   <project path="external/lzma" name="android_external_lzma" groups="pdk" remote="cm" revision="cm-13.0" />
