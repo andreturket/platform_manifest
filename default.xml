@@ -96,7 +96,6 @@
   <project path="frameworks/opt/cards" name="TurboROM/frameworks_opt_cards" remote="github" revision="m6.0.1" />
   <project path="frameworks/opt/net/ims" name="TurboROM/frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="github" revision="m6.0.1" />
   <project path="frameworks/opt/net/wifi" name="TurboROM/frameworks_opt_net_wifi" groups="pdk" remote="github" revision="m6.0.1" />
-  <project path="frameworks/opt/telephony" name="TurboROM/frameworks_opt_telephony" groups="pdk" remote="github" revision="m6.0.1" />
   <project path="frameworks/support" name="TurboROM/frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="github" revision="m6.0.1" />
   <project path="hardware/ril" name="TurboROM/hardware_ril" remote="github" revision="m6.0.1" groups="pdk" />
   <project path="hardware/ril-caf" name="TurboROM/hardware_ril" remote="github" groups="pdk" revision="m6.0.1-caf" />
